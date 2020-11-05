@@ -1,20 +1,62 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Alert, Dimensions } from "react-native";
+import { Header } from "react-native-elements";
+import Carousel, { Pagination } from "react-native-snap-carousel";
 
 const HomeScreen = () => {
+  const [dimensions, setDimensions] = React.useState({
+    screenWidth: Dimensions.get("window").width,
+    screenHeight: Dimensions.get("window").height,
+  });
+
+  const renderItem = ({ item }) => {
+    return (
+      <View style={styles.carousel_container}>
+        <Text>{item.title}</Text>
+      </View>
+    );
+  };
+
   return (
-    <View style={styles.container}>
-      <Text>Home Screen</Text>
+    <View>
       <StatusBar style="auto" />
+      <Header
+        backgroundColor="white"
+        centerComponent={<Text>OWNE</Text>}
+        rightComponent={{
+          icon: "search",
+          color: "#FFE27D",
+          onPress: () => {
+            Alert.alert("Search");
+          },
+        }}
+      />
+      <Carousel
+        data={[
+          {
+            title: "Item 1",
+            text: "Text 1",
+          },
+          {
+            title: "Item 2",
+            text: "Text 2",
+          },
+        ]}
+        renderItem={renderItem}
+        itemWidth={dimensions.screenWidth * 0.9}
+        sliderWidth={dimensions.screenWidth}
+      />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
+  carousel_container: {
+    backgroundColor: "yellow",
+    marginVertical: 15,
+    flexGrow: 1,
+    height: 150,
     alignItems: "center",
     justifyContent: "center",
   },
