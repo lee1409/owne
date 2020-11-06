@@ -1,10 +1,11 @@
-import React from "react";
-import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
-import BottomTabNavigator from "./src/navigations/BottomTabNavigator";
-import LoginScreen from "./src/navigations/LoginScreen";
-
-import * as firebase from "firebase";
+import React from 'react';
+import { Provider } from 'react-redux';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import * as firebase from 'firebase';
+import BottomTabNavigator from './src/navigations/BottomTabNavigator';
+import LoginScreen from './src/navigations/LoginScreen';
+import store from './src/redux/store';
 
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
@@ -34,15 +35,17 @@ const App = () => {
   }, []);
 
   return (
-    <NavigationContainer>
-      {userToken === null ? (
-        <Stack.Navigator>
-          <Stack.Screen name="Login" component={LoginScreen} />
-        </Stack.Navigator>
-      ) : (
-        <BottomTabNavigator />
-      )}
-    </NavigationContainer>
+    <Provider store={store}>
+      <NavigationContainer>
+        {userToken === null ? (
+          <Stack.Navigator>
+            <Stack.Screen name="Login" component={LoginScreen} />
+          </Stack.Navigator>
+        ) : (
+          <BottomTabNavigator />
+        )}
+      </NavigationContainer>
+    </Provider>
   );
 };
 

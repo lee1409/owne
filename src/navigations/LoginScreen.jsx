@@ -1,21 +1,33 @@
-import React from "react";
-import { Text, View, StyleSheet } from "react-native";
-import { Input, Button } from "react-native-elements";
-import { useFormik } from "formik";
-import firebase from "firebase";
-import * as Facebook from "expo-facebook";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { Text, View, StyleSheet } from 'react-native';
+import { Input, Button } from 'react-native-elements';
+import { useFormik } from 'formik';
+import firebase from 'firebase';
+import * as Facebook from 'expo-facebook';
 
-const LoginScreen = () => {
+import { SIGNUP } from '../redux/actions/user-action';
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+  },
+});
+
+const LoginScreen = ({ onSignup }) => {
   const formik = useFormik({
     initialValues: {
-      email: "",
-      password: "",
+      email: '',
+      password: '',
     },
   });
 
   const signup = () => {
     const { email, password } = formik.values;
-    firebase.auth().createUserWithEmailAndPassword(email, password);
+    // firebase.auth().createUserWithEmailAndPassword(email, password);
+    onSignup({ email, password });
   };
 
   const login = () => {
@@ -32,10 +44,10 @@ const LoginScreen = () => {
         appId: process.env.FB_APP_ID,
       });
       const { type, token } = await Facebook.logInWithReadPermissionsAsync({
-        permissions: ["public_profile"],
+        permissions: ['public_profile'],
       });
 
-      if (type === "success") {
+      if (type === 'success') {
         const credential = firebase.auth.FacebookAuthProvider.credential(token);
         firebase.auth().signInWithCredential(credential);
       }
@@ -50,14 +62,14 @@ const LoginScreen = () => {
       <Input
         placeholder="Email"
         value={formik.values.email}
-        onChangeText={formik.handleChange("email")}
+        onChangeText={formik.handleChange('email')}
       />
       <Text>Password</Text>
       <Input
         placeholder="Password"
         secureTextEntry
         value={formik.values.password}
-        onChangeText={formik.handleChange("password")}
+        onChangeText={formik.handleChange('password')}
       />
       <Button title="Login" onPress={login} />
       <Button title="Sign Up" type="outline" onPress={signup} />
@@ -70,11 +82,12 @@ const LoginScreen = () => {
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-  },
+LoginScreen.propTypes = {
+  onSignup: PropTypes.func,
+};
+
+const mapDispatchToProps = (dispatch) => ({
+  onSignup: (payload) => dispatch({ type: SIGNUP, data: payload }),
 });
 
-export default LoginScreen;
+export default connect(null, mapDispatchToProps)(LoginScreen);
