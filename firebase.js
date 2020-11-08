@@ -1,5 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
+import 'firebase/auth';
 
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
@@ -15,6 +16,13 @@ const firebaseConfig = {
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
 }
-firebase.firestore();
+const db = firebase.firestore();
+const auth = firebase.auth();
+
+// eslint-disable-next-line no-undef
+if (__DEV__) {
+  db.useEmulator('localhost', 8080);
+  auth.useEmulator('http://localhost:9099/');
+}
 
 export default firebase;
