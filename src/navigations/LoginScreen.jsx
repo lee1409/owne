@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { useFirebase } from 'react-redux-firebase';
 import { Text, View, StyleSheet } from 'react-native';
 import { Input, Button } from 'react-native-elements';
 import { useFormik } from 'formik';
-import firebase from 'firebase';
 import * as Facebook from 'expo-facebook';
 
 import { SIGNUP } from '../redux/actions/user-action';
@@ -17,6 +17,8 @@ const styles = StyleSheet.create({
 });
 
 const LoginScreen = ({ onSignup }) => {
+  const firebase = useFirebase();
+
   const formik = useFormik({
     initialValues: {
       email: '',
@@ -26,16 +28,16 @@ const LoginScreen = ({ onSignup }) => {
 
   const signup = () => {
     const { email, password } = formik.values;
-    // firebase.auth().createUserWithEmailAndPassword(email, password);
+    firebase.auth().createUserWithEmailAndPassword(email, password);
     onSignup({ email, password });
   };
 
   const login = () => {
-    const { email, password } = formik.values;
-    firebase
-      .auth()
-      .signInWithEmailAndPassword(email, password)
-      .then((resp) => console.log(resp));
+    // const { email, password } = formik.values;
+    // firebase
+    //   .auth()
+    //   .signInWithEmailAndPassword(email, password)
+    //   .then((resp) => console.log(resp));
   };
 
   const facebookLogin = async () => {
