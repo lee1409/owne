@@ -2,7 +2,13 @@
   "packages": [
     "packages/*"
   ],
+  "publish": {
+    "bump": "patch",
+    "conventionalCommits": true,
+    "message": "chore(release): Publish"
+  },
   "npmClient": "yarn",
+  "registry": "https://registry.npmjs.org/",
   "useWorkspaces": true,
-  "version": "independent",
+  "version": "independent"
 }

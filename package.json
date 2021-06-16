@@ -1,7 +1,15 @@
 {
-  "name": "root",
+  "name": "owne",
   "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "publish-release": "lerna publish patch --conventional-commits"
+  },
   "devDependencies": {
-    "lerna": "^4.0.0"
-  }
+    "lerna": "^4.0.0",
+    "prettifier": "^0.4.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }
