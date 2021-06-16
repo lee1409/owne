@@ -2,6 +2,11 @@
   "packages": [
     "packages/*"
   ],
+  "publish": {
+    "bump": "patch",
+    "conventionalCommits": true,
+    "message": "chore(release): Publish"
+  },
   "npmClient": "yarn",
   "useWorkspaces": true,
   "version": "independent"
