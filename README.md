@@ -1,3 +1,3 @@
 # Owne
 
-Monorepo for every owne
+Monorepo for owne
