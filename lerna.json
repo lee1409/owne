@@ -1,7 +1,6 @@
 {
   "command": {
     "publish": {
-      "allowBranch": "release/*",
       "bump": "patch",
       "conventionalCommits": true,
       "message": "chore(release): publish"
