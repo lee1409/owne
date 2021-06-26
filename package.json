@@ -7,7 +7,9 @@
   },
   "devDependencies": {
     "lerna": "^4.0.0",
-    "prettifier": "^0.4.0"
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.2"
   },
   "husky": {
     "hooks": {
