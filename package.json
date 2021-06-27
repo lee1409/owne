@@ -23,11 +23,6 @@
       "cms",
       "mobile",
       "web"
-    ],
-    "nohoist": [
-      "cms/**",
-      "mobile/**",
-      "web/**"
     ]
   }
 }
