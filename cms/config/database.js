@@ -1,8 +1,8 @@
 module.exports = ({ env }) => {
   const settings =
     env("NODE_ENV") === "development"
-      ? ({ client: "sqlite", filename: env("DATABASE_FILENAME", ".tmp/data.db") })
-      : ({
+      ? { client: "sqlite", filename: env("DATABASE_FILENAME", ".tmp/data.db") }
+      : {
           client: "postgres",
           host: env("DATABASE_HOSTNAME"),
           port: env.int("DATABASE_PORT", 5432),
@@ -11,12 +11,11 @@ module.exports = ({ env }) => {
           password: env("DATABASE_PASSWORD"),
           schema: env("DATABASE_SCHEMA", "public"),
           ssl: env("DATABASE_SSL", false),
-        })
+        }
 
-  const obj = {
+  return obj = {
     defaultConnection: "default",
     connections: {
-
       default: {
         connector: "bookshelf",
         settings,
@@ -26,5 +25,4 @@ module.exports = ({ env }) => {
       },
     },
   }
-  return obj
 }
