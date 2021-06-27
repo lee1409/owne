@@ -2,9 +2,11 @@
   "name": "owne",
   "private": true,
   "scripts": {
-    "publish-release": "lerna publish"
+    "publish-release": "lerna publish",
+    "format": "prettier --write"
   },
   "devDependencies": {
+    "eslint-config-prettier": "^8.3.0",
     "husky": "^6.0.0",
     "lerna": "^4.0.0",
     "lint-staged": "^11.0.0",
@@ -16,7 +18,7 @@
     }
   },
   "lint-staged": {
-    "packages/owne-web/src/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+    "*.{js,jsx,ts,tsx,json,css,scss,md}": [
       "prettier --write"
     ]
   },
