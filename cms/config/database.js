@@ -25,8 +25,4 @@ module.exports = ({ env }) => {
       },
     },
   };
-
-
-  
-
 };
