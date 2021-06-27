@@ -8,7 +8,8 @@
     "extends": [
         "plugin:react/recommended",
         "airbnb",
-        "airbnb/hooks"
+        "airbnb/hooks",
+        "prettier"
     ],
     "parserOptions": {
         "ecmaFeatures": {
