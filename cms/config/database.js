@@ -13,7 +13,7 @@ module.exports = ({ env }) => {
           ssl: env("DATABASE_SSL", false),
         }
 
-  return obj = {
+  return ({
     defaultConnection: "default",
     connections: {
       default: {
@@ -24,5 +24,8 @@ module.exports = ({ env }) => {
         },
       },
     },
-  }
+  })
+
+
+  
 }
