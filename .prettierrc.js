@@ -5,7 +5,7 @@ module.exports = {
   overrides: [
     {
       // This apps uses semicolons.
-      files: ["cms/*"],
+      files: ["cms/**/*"],
       options: {
         semi: true,
         singleQuote: true
