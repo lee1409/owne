@@ -1,12 +1,14 @@
 # OWNE Mobile App
 
 ## Requirement
+
 1. Create an `.env` file in project root `./`.
 2. Go to firebase console and copy firebase config from `web` setting.
 3. Paste the config in `.env` file.
 4. Paste Facebook app id in `.env` file. (Follow is [guide](https://docs.expo.io/versions/latest/sdk/facebook/) to setup FB Developer.)
 
 Your `.env` file should look as below:
+
 ```
 FIREBASE_API_KEY=<apiKey>
 FIREBASE_AUTH_DOMAIN=<authDomain>

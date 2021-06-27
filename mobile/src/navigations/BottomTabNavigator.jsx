@@ -1,12 +1,12 @@
-import React from 'react';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import React from "react"
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 
-import HomeScreen from './HomeScreen';
-import SettingScreen from './SettingScreen';
-import ProfileScreen from './ProfileScreen';
+import HomeScreen from "./HomeScreen"
+import SettingScreen from "./SettingScreen"
+import ProfileScreen from "./ProfileScreen"
 
 const BottomTabNavigator = () => {
-  const Tab = createBottomTabNavigator();
+  const Tab = createBottomTabNavigator()
 
   return (
     <Tab.Navigator>
@@ -14,7 +14,7 @@ const BottomTabNavigator = () => {
       <Tab.Screen name="Setting" component={SettingScreen} />
       <Tab.Screen name="Profile" component={ProfileScreen} />
     </Tab.Navigator>
-  );
-};
+  )
+}
 
-export default BottomTabNavigator;
+export default BottomTabNavigator
