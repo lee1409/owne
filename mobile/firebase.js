@@ -1,6 +1,6 @@
-import firebase from 'firebase/app';
-import 'firebase/firestore';
-import 'firebase/auth';
+import firebase from "firebase/app"
+import "firebase/firestore"
+import "firebase/auth"
 
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
@@ -11,18 +11,18 @@ const firebaseConfig = {
   messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
   appId: process.env.FIREBASE_APP_ID,
   measurementId: process.env.FIREBASE_MEASUREMENT_ID,
-};
+}
 
 if (!firebase.apps.length) {
-  firebase.initializeApp(firebaseConfig);
+  firebase.initializeApp(firebaseConfig)
 }
-const db = firebase.firestore();
-const auth = firebase.auth();
+const db = firebase.firestore()
+const auth = firebase.auth()
 
 // eslint-disable-next-line no-undef
 if (__DEV__) {
-  db.useEmulator('localhost', 8080);
-  auth.useEmulator('http://localhost:9099/');
+  db.useEmulator("localhost", 8080)
+  auth.useEmulator("http://localhost:9099/")
 }
 
-export default firebase;
+export default firebase

@@ -1,19 +1,17 @@
-import {
-  SET_USER_INFO
-} from "../actions/user-action";
+import { SET_USER_INFO } from "../actions/user-action"
 
 const initialState = {
-  userToken: '',
-};
+  userToken: "",
+}
 
 export default (state = initialState, action) => {
-  switch(action.type) {
+  switch (action.type) {
     case SET_USER_INFO:
       return {
         ...state,
         ...action.userData,
-      };
+      }
     default:
-      return state;
+      return state
   }
-};
+}

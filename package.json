@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "publish-release": "lerna publish",
-    "format": "prettier --write"
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,json,css,scss,md}'"
   },
   "devDependencies": {
     "eslint-config-prettier": "^8.3.0",

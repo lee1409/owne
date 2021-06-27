@@ -1,36 +1,36 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { useFirebase } from 'react-redux-firebase';
-import { Text, View, StyleSheet } from 'react-native';
-import { Input, Button } from 'react-native-elements';
-import { useFormik } from 'formik';
-import * as Facebook from 'expo-facebook';
+import React from "react"
+import PropTypes from "prop-types"
+import { connect } from "react-redux"
+import { useFirebase } from "react-redux-firebase"
+import { Text, View, StyleSheet } from "react-native"
+import { Input, Button } from "react-native-elements"
+import { useFormik } from "formik"
+import * as Facebook from "expo-facebook"
 
-import { SIGNUP } from '../redux/actions/user-action';
+import { SIGNUP } from "../redux/actions/user-action"
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: "center",
   },
-});
+})
 
 const LoginScreen = ({ onSignup }) => {
-  const firebase = useFirebase();
+  const firebase = useFirebase()
 
   const formik = useFormik({
     initialValues: {
-      email: '',
-      password: '',
+      email: "",
+      password: "",
     },
-  });
+  })
 
   const signup = () => {
-    const { email, password } = formik.values;
-    firebase.auth().createUserWithEmailAndPassword(email, password);
-    onSignup({ email, password });
-  };
+    const { email, password } = formik.values
+    firebase.auth().createUserWithEmailAndPassword(email, password)
+    onSignup({ email, password })
+  }
 
   const login = () => {
     // const { email, password } = formik.values;
@@ -38,25 +38,25 @@ const LoginScreen = ({ onSignup }) => {
     //   .auth()
     //   .signInWithEmailAndPassword(email, password)
     //   .then((resp) => console.log(resp));
-  };
+  }
 
   const facebookLogin = async () => {
     try {
       await Facebook.initializeAsync({
         appId: process.env.FB_APP_ID,
-      });
+      })
       const { type, token } = await Facebook.logInWithReadPermissionsAsync({
-        permissions: ['public_profile'],
-      });
+        permissions: ["public_profile"],
+      })
 
-      if (type === 'success') {
-        const credential = firebase.auth.FacebookAuthProvider.credential(token);
-        firebase.auth().signInWithCredential(credential);
+      if (type === "success") {
+        const credential = firebase.auth.FacebookAuthProvider.credential(token)
+        firebase.auth().signInWithCredential(credential)
       }
     } catch ({ message }) {
-      alert(`Facebook Login Error: ${message}`);
+      alert(`Facebook Login Error: ${message}`)
     }
-  };
+  }
 
   return (
     <View style={styles.container}>
@@ -64,14 +64,14 @@ const LoginScreen = ({ onSignup }) => {
       <Input
         placeholder="Email"
         value={formik.values.email}
-        onChangeText={formik.handleChange('email')}
+        onChangeText={formik.handleChange("email")}
       />
       <Text>Password</Text>
       <Input
         placeholder="Password"
         secureTextEntry
         value={formik.values.password}
-        onChangeText={formik.handleChange('password')}
+        onChangeText={formik.handleChange("password")}
       />
       <Button title="Login" onPress={login} />
       <Button title="Sign Up" type="outline" onPress={signup} />
@@ -81,15 +81,15 @@ const LoginScreen = ({ onSignup }) => {
         onPress={facebookLogin}
       />
     </View>
-  );
-};
+  )
+}
 
 LoginScreen.propTypes = {
   onSignup: PropTypes.func,
-};
+}
 
-const mapDispatchToProps = (dispatch) => ({
-  onSignup: (payload) => dispatch({ type: SIGNUP, data: payload }),
-});
+const mapDispatchToProps = dispatch => ({
+  onSignup: payload => dispatch({ type: SIGNUP, data: payload }),
+})
 
-export default connect(null, mapDispatchToProps)(LoginScreen);
+export default connect(null, mapDispatchToProps)(LoginScreen)

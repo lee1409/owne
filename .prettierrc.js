@@ -8,8 +8,8 @@ module.exports = {
       files: ["cms/**/*"],
       options: {
         semi: true,
-        singleQuote: true
+        singleQuote: true,
       },
-    }
+    },
   ],
 }

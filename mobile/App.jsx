@@ -1,20 +1,20 @@
-import React from 'react';
-import { Provider } from 'react-redux';
-import { ReactReduxFirebaseProvider } from 'react-redux-firebase';
+import React from "react"
+import { Provider } from "react-redux"
+import { ReactReduxFirebaseProvider } from "react-redux-firebase"
 
-import firebase from './firebase';
-import Route from './src/navigations/route';
-import store from './src/redux/store';
+import firebase from "./firebase"
+import Route from "./src/navigations/route"
+import store from "./src/redux/store"
 
 // eslint-disable-next-line no-undef
 if (__DEV__) {
-  import('./ReactotronConfig').then(() => console.log('Reactotron Configured'));
+  import("./ReactotronConfig").then(() => console.log("Reactotron Configured"))
 }
 
 const rrfConfig = {
-  userProfile: 'user',
+  userProfile: "user",
   useFirestoreForProfile: true,
-};
+}
 
 const App = () => (
   <Provider store={store}>
@@ -26,6 +26,6 @@ const App = () => (
       <Route />
     </ReactReduxFirebaseProvider>
   </Provider>
-);
+)
 
-export default App;
+export default App
