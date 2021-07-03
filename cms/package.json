@@ -8,7 +8,9 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "gcp-build": "strapi build"
+    "gcp-build": "strapi build",
+    "predeploy": "yarn build && node ./scripts/build-app-yaml > app.yaml",
+    "deploy": "yarn predeploy && ./scripts/decrypt-secret.sh && node ./scripts/deploy.js"
   },
   "dependencies": {
     "knex": "0.21.18",
