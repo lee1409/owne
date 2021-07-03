@@ -10,7 +10,7 @@
     "strapi": "strapi",
     "gcp-build": "strapi build",
     "predeploy": "node ./scripts/build-app-yaml > app.yaml",
-    "deploy": "yarn predeploy && ./scripts/decrypt-secret.sh && node ./scripts/deploy.js"
+    "deploy": "yarn predeploy && ./scripts/decrypt-secret.sh && ./scripts/deploy.sh"
   },
   "dependencies": {
     "knex": "0.21.18",

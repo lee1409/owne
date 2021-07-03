@@ -20,6 +20,8 @@ jobs:
     - run: wget -O google.tar.gz https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-347.0.0-linux-x86.tar.gz
     - run: tar xvzf google.tar.gz
     - run: ./google-cloud-sdk/install.sh --quiet
+    - run: chmod +x cms/scripts/decrypt-secret.sh
+
     - run: npm install -g yarn
     - run: yarn install
     - run: yarn cms:deploy
