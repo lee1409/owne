@@ -9,7 +9,7 @@
     "build": "strapi build",
     "strapi": "strapi",
     "gcp-build": "strapi build",
-    "predeploy": "yarn build && node ./scripts/build-app-yaml > app.yaml",
+    "predeploy": "node ./scripts/build-app-yaml > app.yaml",
     "deploy": "yarn predeploy && ./scripts/decrypt-secret.sh && node ./scripts/deploy.js"
   },
   "dependencies": {
@@ -34,7 +34,7 @@
     "uuid": "aa35a8f1-0dbb-4887-a589-a66bac4b63ab"
   },
   "engines": {
-    "node": ">=10.0",
+    "node": ">=12.0",
     "npm": "^6.0.0"
   },
   "license": "MIT"

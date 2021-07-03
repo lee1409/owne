@@ -20,7 +20,7 @@ function check(ele) {
 
 console.log(
   YAML.stringify({
-    runtime: 'nodejs10',
+    runtime: 'nodejs12',
     instance_class: 'F1',
     env_variables: {
       HOST: '0.0.0.0',
