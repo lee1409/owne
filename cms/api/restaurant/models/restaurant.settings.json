@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "restaurants",
+  "info": {
+    "name": "Restaurant",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "open_at": {
+      "type": "time"
+    },
+    "close_at": {
+      "type": "time"
+    },
+    "address": {
+      "type": "text"
+    },
+    "comments": {
+      "model": "comment",
+      "via": "restaurant"
+    },
+    "hashtags": {
+      "collection": "hashtag"
+    },
+    "operating_days": {
+      "collection": "day"
+    }
+  }
+}
