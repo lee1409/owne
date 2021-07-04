@@ -10,7 +10,7 @@
     "strapi": "strapi",
     "gcp-build": "strapi build",
     "predeploy": "node ./scripts/build-app-yaml > app.yaml",
-    "deploy": "yarn predeploy && ./scripts/deploy.sh"
+    "deploy": "yarn predeploy && gcloud app deploy app.yaml --quiet"
   },
   "dependencies": {
     "knex": "0.21.18",

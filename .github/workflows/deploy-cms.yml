@@ -22,15 +22,15 @@ jobs:
             **/node_modules
           key: ${{ runner.os }}-${{ hashFiles('yarn.lock') }}
     
-      - name: "Installing yarn"
+      - name: Installing yarn
         uses: actions/setup-node@v2
       - run: npm install -g yarn
 
-      - name: "yarn install"
+      - name: yarn install
         if: steps.cache-node-modules.outputs.cache-hit != 'true'
         run: yarn install --skip-builds
 
-      - name: "Deploy to app engine"
+      - name: Deploy to app engine
         uses: google-github-actions/setup-gcloud@master
         with:
           project_id: ${{ secrets.PROJECT }}
@@ -38,10 +38,9 @@ jobs:
           export_default_credentials: false
       - run: yarn cms:deploy
         env:
-          NODE_ENV: 'production'
+          NODE_ENV: production
           DATABASE_HOSTNAME: ${{ secrets.DATABASE_HOSTNAME }}
           DATABASE_NAME: ${{ secrets.DATABASE_NAME }}
           DATABASE_USERNAME: ${{ secrets.DATABASE_USERNAME }}
           DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
-          PASSPHRASE: ${{ secrets.PASSPHRASE }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
