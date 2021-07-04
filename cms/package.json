@@ -8,7 +8,9 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "gcp-build": "strapi build"
+    "gcp-build": "strapi build",
+    "predeploy": "node ./scripts/build-app-yaml > app.yaml",
+    "deploy": "yarn predeploy && gcloud app deploy app.yaml --quiet"
   },
   "dependencies": {
     "knex": "0.21.18",
@@ -32,7 +34,7 @@
     "uuid": "aa35a8f1-0dbb-4887-a589-a66bac4b63ab"
   },
   "engines": {
-    "node": ">=10.0",
+    "node": ">=12.0",
     "npm": "^6.0.0"
   },
   "license": "MIT"
