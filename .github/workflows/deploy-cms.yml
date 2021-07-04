@@ -1,37 +1,47 @@
 # This workflow will do a clean install of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-name: Node.js CI
+name: CMS Deploy
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches:
+      - master
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-      name: "Building CMS"
-    - uses: actions/setup-node@v2
-    - run: wget -O google.tar.gz https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-347.0.0-linux-x86.tar.gz
-    - run: tar xvzf google.tar.gz
-    - run: ./google-cloud-sdk/install.sh --quiet
-    - run: chmod +x cms/scripts/decrypt-secret.sh
+      - name: Checking out codes
+        uses: actions/checkout@v2
 
-    - run: npm install -g yarn
-    - run: yarn install
-    - run: yarn cms:deploy
-      env:
-        DATABASE_HOSTNAME: ${{ secrets.DATABASE_HOSTNAME }}
-        DATABASE_NAME: ${{ secrets.DATABASE_NAME }}
-        DATABASE_USERNAME: ${{ secrets.DATABASE_USERNAME }}
-        DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
-        SERVICE_ACC: ${{ secrets.SERVICE_ACC }}
-        PROJECT: ${{ secrets.PROJECT }}
-        PASSPHRASE: ${{ secrets.PASSPHRASE }}
-        NODE_ENV: 'production'
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Cache node_modules
+        id: cache-node-modules
+        uses: actions/cache@v2
+        with:
+          path: |
+            **/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+    
+      - name: "Installing yarn"
+        uses: actions/setup-node@v2
+      - run: npm install -g yarn
+
+      - name: "yarn install"
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: yarn install --skip-builds
+
+      - name: "Deploy to app engine"
+        uses: google-github-actions/setup-gcloud@master
+        with:
+          project_id: ${{ secrets.PROJECT }}
+          service_account_key: ${{ secrets.GCP_SA_KEY }}
+          export_default_credentials: false
+      - run: yarn cms:deploy
+        env:
+          NODE_ENV: 'production'
+          DATABASE_HOSTNAME: ${{ secrets.DATABASE_HOSTNAME }}
+          DATABASE_NAME: ${{ secrets.DATABASE_NAME }}
+          DATABASE_USERNAME: ${{ secrets.DATABASE_USERNAME }}
+          DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
+          PASSPHRASE: ${{ secrets.PASSPHRASE }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
