@@ -9,6 +9,8 @@
     "cms:deploy": "cd cms && yarn deploy"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@types/jest": "^26.0.24",
     "eslint-config-prettier": "^8.3.0",
     "husky": "^6.0.0",
     "lerna": "^4.0.0",

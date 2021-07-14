@@ -4157,9 +4157,14 @@ __metadata:
     "@testing-library/jest-dom": ^5.11.4
     "@testing-library/react": ^11.1.0
     "@testing-library/user-event": ^12.1.10
+    "@types/jest": ^26.0.24
+    "@types/node": ^16.3.2
+    "@types/react": ^17.0.14
+    "@types/react-dom": ^17.0.9
     react: ^17.0.2
     react-dom: ^17.0.2
     react-scripts: 4.0.3
+    typescript: ^4.3.5
     web-vitals: ^1.0.1
   languageName: unknown
   linkType: soft
@@ -4968,7 +4973,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:^5.11.4":
+"@testing-library/jest-dom@npm:^5.11.4, @testing-library/jest-dom@npm:^5.14.1":
   version: 5.14.1
   resolution: "@testing-library/jest-dom@npm:5.14.1"
   dependencies:
@@ -5201,6 +5206,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/jest@npm:^26.0.24":
+  version: 26.0.24
+  resolution: "@types/jest@npm:26.0.24"
+  dependencies:
+    jest-diff: ^26.0.0
+    pretty-format: ^26.0.0
+  checksum: e5d3651c1edf197011d19ee8f4bacd52667fa673d1b2ffbfbce624208d643fd4372ebb31fa8a1d89843a7705f142e38076e25e1e7b67f3aacafd6ae8bc77cbcf
+  languageName: node
+  linkType: hard
+
 "@types/json-schema@npm:*, @types/json-schema@npm:^7.0.3, @types/json-schema@npm:^7.0.5, @types/json-schema@npm:^7.0.6, @types/json-schema@npm:^7.0.7":
   version: 7.0.7
   resolution: "@types/json-schema@npm:7.0.7"
@@ -5269,6 +5284,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:^16.3.2":
+  version: 16.3.2
+  resolution: "@types/node@npm:16.3.2"
+  checksum: 11896edc7022a40f8938e64f57e497b3110ca732bdef785f86f0a0a819609e9b78ad0c950dcaa59177bc299f2793489b605a3e713cdf7900a39031f0018e2134
+  languageName: node
+  linkType: hard
+
 "@types/normalize-package-data@npm:^2.4.0":
   version: 2.4.0
   resolution: "@types/normalize-package-data@npm:2.4.0"
@@ -5301,6 +5323,15 @@ __metadata:
   version: 1.5.4
   resolution: "@types/q@npm:1.5.4"
   checksum: 1a19cf2c41648b862bd25a4c26ba33dc7206f14fcf50c5b78031b59090d21176e703cd10aff8af409eafbefcebb288607d30af765ee3859637cf3fae6e875648
+  languageName: node
+  linkType: hard
+
+"@types/react-dom@npm:^17.0.9":
+  version: 17.0.9
+  resolution: "@types/react-dom@npm:17.0.9"
+  dependencies:
+    "@types/react": "*"
+  checksum: 82da85bcfba524fb83946df50e433b8cc942dd30f5f3f6e0756816960ce4b85db6faa2da9f2b83124087fbe0d124580edf7b1017628b78fb28fee057e91512cb
   languageName: node
   linkType: hard
 
@@ -5352,6 +5383,17 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: ed2b57e44e8da99b13a7b0cd7d9d9159e3113a5160e25c9deae4f577cfb87f05103b54bb0e9722f48a7db3ddb3a836ade12b971bbc338d397b719886fb81efff
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:^17.0.14":
+  version: 17.0.14
+  resolution: "@types/react@npm:17.0.14"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: 3c5373845b0869d9ce3db16917c87707cdfdb6c08d9ca7ed90a2a097cb3cbec8d037d37e81c3cf5af721d92f8fdc62431405f1874f9a02dea6ec05e5d81e77fe
   languageName: node
   linkType: hard
 
@@ -19384,6 +19426,8 @@ fsevents@^1.2.7:
   version: 0.0.0-use.local
   resolution: "owne@workspace:."
   dependencies:
+    "@testing-library/jest-dom": ^5.14.1
+    "@types/jest": ^26.0.24
     eslint-config-prettier: ^8.3.0
     husky: ^6.0.0
     lerna: ^4.0.0
@@ -26775,6 +26819,26 @@ resolve@^2.0.0-next.3:
   dependencies:
     typescript-compare: ^0.0.2
   checksum: 11b5d1983ab5df921865ec6b86f676496c63db95acba42ac2daa5797297804278e34b9c33937ec6209eeb764248aedb65e3f03a11cf2702da4965f957d2c459b
+  languageName: node
+  linkType: hard
+
+typescript@^4.3.5:
+  version: 4.3.5
+  resolution: "typescript@npm:4.3.5"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: d9a8e78d72dd19896e6bfa73ab2a0fcea6eca2700d1d6e7c33f67a970af54a3e0fed8f715a8c4e6a0ff7fc0995067b394b2003518ab0aa84cd396377e54b760c
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^4.3.5#builtin<compat/typescript>":
+  version: 4.3.5
+  resolution: "typescript@patch:typescript@npm%3A4.3.5#builtin<compat/typescript>::version=4.3.5&hash=ddfc1b"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 7f0b8343f71ecac18095be1476b398aca420ab60dc207cc1efe078f381eef5527b80a518297720257114cdbda65612f8839e4b63e85dc95e67ac5cbbade8bdf0
   languageName: node
   linkType: hard
 
