@@ -1,6 +1,6 @@
 import React from "react"
 import { render } from "@testing-library/react"
-import { H1 } from "../Typography"
+import { H1 } from "."
 
 test("H1", () => {
   let h1 = render(<H1>Testing</H1>)
