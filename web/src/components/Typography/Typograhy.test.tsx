@@ -13,9 +13,10 @@ test("HeaderLogo", () => {
 })
 
 test("HeaderTitle", () => {
-  const headerLogo = render(<HeaderTitle>Testing</HeaderTitle>)
+  const headerLogo = render(<HeaderTitle label="Menu" />)
   expect(headerLogo).toMatchSnapshot("HeaderTitle")
 })
+
 test("HeaderNavLabel", () => {
   const headerLogo = render(<HeaderNavLabel>Testing</HeaderNavLabel>)
   expect(headerLogo).toMatchSnapshot("HeaderNavLabel")

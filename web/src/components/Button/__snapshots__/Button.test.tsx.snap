@@ -6,7 +6,8 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="MuiButtonBase-root MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-1 WithStyles(ForwardRef(IconButton))-root-2"
+        icon="add"
         tabindex="0"
         type="button"
       >
@@ -32,7 +33,8 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="MuiButtonBase-root MuiIconButton-root"
+      class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-1 WithStyles(ForwardRef(IconButton))-root-2"
+      icon="add"
       tabindex="0"
       type="button"
     >
@@ -115,7 +117,7 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="MuiButtonBase-root MuiButton-root makeStyles-headerNavButtonRoot-1 MuiButton-text"
+        class="MuiButtonBase-root MuiButton-root MuiButton-text WithStyles(ForwardRef(Button))-root-3 WithStyles(ForwardRef(Button))-root-4"
         tabindex="0"
         type="button"
       >
@@ -131,7 +133,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="MuiButtonBase-root MuiButton-root makeStyles-headerNavButtonRoot-1 MuiButton-text"
+      class="MuiButtonBase-root MuiButton-root MuiButton-text WithStyles(ForwardRef(Button))-root-3 WithStyles(ForwardRef(Button))-root-4"
       tabindex="0"
       type="button"
     >
@@ -204,7 +206,8 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="MuiButtonBase-root MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-5 WithStyles(ForwardRef(IconButton))-root-6"
+        icon="search"
         tabindex="0"
         type="button"
       >
@@ -230,7 +233,8 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="MuiButtonBase-root MuiIconButton-root"
+      class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-5 WithStyles(ForwardRef(IconButton))-root-6"
+      icon="search"
       tabindex="0"
       type="button"
     >

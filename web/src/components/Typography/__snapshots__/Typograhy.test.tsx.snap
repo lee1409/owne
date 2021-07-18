@@ -81,7 +81,7 @@ Object {
       <h4
         class="MuiTypography-root MuiTypography-h4"
       >
-        Testing
+        Owne
       </h4>
     </div>
   </body>,
@@ -89,7 +89,7 @@ Object {
     <h4
       class="MuiTypography-root MuiTypography-h4"
     >
-      Testing
+      Owne
     </h4>
   </div>,
   "debug": [Function],
@@ -226,16 +226,18 @@ Object {
     <div>
       <h5
         class="MuiTypography-root MuiTypography-h5"
+        label="Menu"
       >
-        Testing
+        Menu
       </h5>
     </div>
   </body>,
   "container": <div>
     <h5
       class="MuiTypography-root MuiTypography-h5"
+      label="Menu"
     >
-      Testing
+      Menu
     </h5>
   </div>,
   "debug": [Function],

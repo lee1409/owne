@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react"
-import { SearchBar } from "."
+import SearchBar from "."
 
 test("SearchBar", () => {
   const searchBar = render(<SearchBar />)

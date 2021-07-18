@@ -1,43 +1,57 @@
 import {
   Button,
-  IconButton,
-  IconButtonProps,
+  IconButton as MuiIconButton,
+  IconButtonProps as MuiIconButtonProps,
   ButtonProps,
-  makeStyles,
 } from "@material-ui/core"
-import { Search, AddCircleOutlineOutlined } from "@material-ui/icons"
+import {
+  Search,
+  AddCircleOutlineOutlined,
+  SvgIconComponent,
+} from "@material-ui/icons"
+import { styled } from "@material-ui/core/styles"
 import { HeaderNavLabel } from "../Typography"
 
-const useStyles = makeStyles(() => ({
-  headerNavButtonRoot: {
-    textTransform: "none",
-  },
+const StyledIconButtonContainer = styled(MuiIconButton)(({ theme }) => ({
+  color: theme.palette.secondary.main,
 }))
 
-export const SearchButton = ({ ...props }: IconButtonProps) => (
-  <IconButton {...props}>
-    <Search />
-  </IconButton>
-)
+type IconType = "search" | "add"
 
-export const AddButton = ({ ...props }: IconButtonProps) => (
-  <IconButton {...props}>
-    <AddCircleOutlineOutlined />
-  </IconButton>
-)
+const icons: Record<IconType, SvgIconComponent> = {
+  search: Search,
+  add: AddCircleOutlineOutlined,
+}
 
-export const HeaderNavButton = ({ children, ...props }: ButtonProps) => {
-  const classes = useStyles()
+type IconButtonProps = {
+  icon: IconType
+} & MuiIconButtonProps
+
+export const IconButton = (props: IconButtonProps) => {
+  const { icon } = props
+  const Icon = icons[icon]
   return (
-    <Button
-      variant="text"
-      disableRipple
-      classes={{
-        root: classes.headerNavButtonRoot,
-      }}
-      {...props}
-    >
-      <HeaderNavLabel>{children}</HeaderNavLabel>
-    </Button>
+    <StyledIconButtonContainer {...props}>
+      <Icon />
+    </StyledIconButtonContainer>
+  )
+}
+
+const StyledHeaderNavButtonContainer = styled(Button)(() => ({
+  textTransform: "none",
+}))
+
+type HeaderNavButtonProps = {
+  label: RouteName
+} & ButtonProps
+
+export const HeaderNavButton = ({
+  children,
+  ...props
+}: HeaderNavButtonProps) => {
+  return (
+    <StyledHeaderNavButtonContainer disableRipple {...props}>
+      <HeaderNavLabel>{props.label}</HeaderNavLabel>
+    </StyledHeaderNavButtonContainer>
   )
 }
