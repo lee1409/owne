@@ -2641,6 +2641,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iconify/react@npm:alpha":
+  version: 3.0.0-beta.1
+  resolution: "@iconify/react@npm:3.0.0-beta.1"
+  checksum: 09c06489040938eb5ebc17ef9baaf6a6e31ccdb0b875a205113f6782bb1a7941daaebe123ab82de15776e347e639f0008f07d36204a45f929d32f0b02b630717
+  languageName: node
+  linkType: hard
+
 "@istanbuljs/load-nyc-config@npm:^1.0.0":
   version: 1.1.0
   resolution: "@istanbuljs/load-nyc-config@npm:1.1.0"
@@ -3854,6 +3861,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mui-treasury/layout@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "@mui-treasury/layout@npm:4.5.0"
+  dependencies:
+    "@types/lodash.mapvalues": ^4.6.6
+    debounce: ^1.2.0
+    deepmerge: ^4.2.2
+    lodash.mapvalues: ^4.6.0
+  checksum: 50d698a956643532911386d4b18af7d53970c409b032445cb6a3a2c31272cfd96d235ff714101df6c52b47bae91c45c2f24eff4aa88f4b8d7eaaa4dde8c53d97
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -4166,9 +4185,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@owne/web@workspace:web"
   dependencies:
+    "@iconify/react": alpha
     "@loadable/component": ^5.15.0
     "@material-ui/core": ^4.11.4
     "@material-ui/icons": ^4.11.2
+    "@mui-treasury/layout": ^4.5.0
     "@testing-library/jest-dom": ^5.11.4
     "@testing-library/react": ^11.1.0
     "@testing-library/user-event": ^12.1.10
@@ -5271,6 +5292,22 @@ __metadata:
   dependencies:
     "@types/react": "*"
   checksum: b6db45987e63268f0bab55748253cf4b46b8682b6c6139517bf1c0a30b62334005f1a5dcd2064ab462d31cc3f3e4e41ec90116fc5359221b4f141df42f72961e
+  languageName: node
+  linkType: hard
+
+"@types/lodash.mapvalues@npm:^4.6.6":
+  version: 4.6.6
+  resolution: "@types/lodash.mapvalues@npm:4.6.6"
+  dependencies:
+    "@types/lodash": "*"
+  checksum: 5d757a95654c25e814cd5637d01b1741d7f671d5f8c436719229bfb822e9dc2577cd616cd745cd46c6630cbcdd784b4cfaca5fe0a9185b0d4fcdc11d2591643c
+  languageName: node
+  linkType: hard
+
+"@types/lodash@npm:*":
+  version: 4.14.171
+  resolution: "@types/lodash@npm:4.14.171"
+  checksum: e48668fb030ad7d8c0c7751061bd332ad8704937d976bd4e24fd9e2128f80c17112be11e5c13d39f6a210336dc3549f7fb00eaebb56b94c2bfb89ad64c57d721
   languageName: node
   linkType: hard
 
@@ -9821,6 +9858,13 @@ __metadata:
   version: 1.10.5
   resolution: "dayjs@npm:1.10.5"
   checksum: 11b3a952cdb77959b07318804bd982d1d377581e4752ec478da82b494da1ebb9d82e0539481ab51f90a36e35a268a730034cb6f3cac1b45609755c909329c0a1
+  languageName: node
+  linkType: hard
+
+"debounce@npm:^1.2.0":
+  version: 1.2.1
+  resolution: "debounce@npm:1.2.1"
+  checksum: 04a00c6c45173ac6fb03ad3a7cf742fa4a86f6bf86b22f5b867085f739d0010ad98cbb92e80d60293faf6efb5452c637941092bd8d783cfeabe55c2000b1b07f
   languageName: node
   linkType: hard
 
@@ -16902,6 +16946,13 @@ fsevents@^1.2.7:
   version: 4.0.1
   resolution: "lodash.isstring@npm:4.0.1"
   checksum: 20c46960b74fd63c27b534f1725cd4141ac19b35c7250affee37c8b7899b1a4c5e9820becfafe571a4d48cd4c86206ee03c2e93fe943dbeab82ddd5cab710540
+  languageName: node
+  linkType: hard
+
+"lodash.mapvalues@npm:^4.6.0":
+  version: 4.6.0
+  resolution: "lodash.mapvalues@npm:4.6.0"
+  checksum: 84399826cca974cdbbd1e1eadac6b62a77958b8abeaadef50623de2e1bb1cef5fb5c1cc4077c785ab26e3371e78a3fbc0eaf6a4b913786d31e437644e8ad3439
   languageName: node
   linkType: hard
 
