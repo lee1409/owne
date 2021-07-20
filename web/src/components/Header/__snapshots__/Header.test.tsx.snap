@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <header
-        class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary WithStyles(ForwardRef(AppBar))-root-1 WithStyles(ForwardRef(AppBar))-root-2 mui-fixed MuiPaper-elevation0"
+        class="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary WithStyles(ForwardRef(AppBar))-root-1 WithStyles(ForwardRef(AppBar))-root-2 MuiPaper-elevation0"
       >
         <div
           class="MuiToolbar-root MuiToolbar-regular WithStyles(ForwardRef(Toolbar))-root-3 WithStyles(ForwardRef(Toolbar))-root-4"
@@ -42,7 +42,7 @@ Object {
             />
           </button>
           <button
-            class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-7 WithStyles(ForwardRef(IconButton))-root-9"
+            class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-7 WithStyles(ForwardRef(IconButton))-root-9 MuiIconButton-edgeEnd"
             icon="add"
             tabindex="0"
             type="button"
@@ -71,7 +71,7 @@ Object {
   </body>,
   "container": <div>
     <header
-      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary WithStyles(ForwardRef(AppBar))-root-1 WithStyles(ForwardRef(AppBar))-root-2 mui-fixed MuiPaper-elevation0"
+      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary WithStyles(ForwardRef(AppBar))-root-1 WithStyles(ForwardRef(AppBar))-root-2 MuiPaper-elevation0"
     >
       <div
         class="MuiToolbar-root MuiToolbar-regular WithStyles(ForwardRef(Toolbar))-root-3 WithStyles(ForwardRef(Toolbar))-root-4"
@@ -107,7 +107,7 @@ Object {
           />
         </button>
         <button
-          class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-7 WithStyles(ForwardRef(IconButton))-root-9"
+          class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-7 WithStyles(ForwardRef(IconButton))-root-9 MuiIconButton-edgeEnd"
           icon="add"
           tabindex="0"
           type="button"

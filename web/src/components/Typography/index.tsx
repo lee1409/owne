@@ -1,4 +1,5 @@
 import { Typography, TypographyProps } from "@material-ui/core"
+import { styled } from "@material-ui/core/styles"
 
 export const H1 = ({ ...props }) => <Typography variant="h1" {...props} />
 
@@ -21,3 +22,11 @@ export const HeaderTitle = ({ ...props }: HeaderTitleProps) => (
 export const HeaderNavLabel = ({ ...props }) => (
   <Typography variant="body1" {...props} />
 )
+
+export const FoodName = styled(Typography)({
+  fontSize: "0.75rem",
+})
+
+export const SectionTitle = styled(Typography)({
+  fontSize: "1rem",
+})

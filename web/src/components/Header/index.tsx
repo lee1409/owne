@@ -1,10 +1,9 @@
-import { Toolbar, Avatar } from "@material-ui/core"
+import { Toolbar, Avatar, AppBar } from "@material-ui/core"
 import { styled } from "@material-ui/core/styles"
 import { HeaderTitle, HeaderLogo } from "../Typography"
 import { IconButton } from "../Button"
 import SearchBar from "../SearchBar"
 import HeaderNavList from "../HeaderNavList"
-import { Head } from "../Layout"
 import { useMediaQueryUp } from "../../utils/hook"
 
 const StyledToolBar = styled(Toolbar)(({ theme }) => ({
@@ -12,7 +11,8 @@ const StyledToolBar = styled(Toolbar)(({ theme }) => ({
   height: "100%",
 }))
 
-const StyledAppBar = styled(Head)(({ theme }) => ({
+const StyledAppBar = styled(AppBar)(({ theme }) => ({
+  height: "100px",
   backgroundColor: theme.palette.primary.main,
   color: theme.palette.secondary.main,
 }))
@@ -38,7 +38,7 @@ const Header = () => {
 
   if (matchedLg) {
     return (
-      <StyledAppBar elevation={0}>
+      <StyledAppBar elevation={0} position="sticky">
         <StyledToolBar disableGutters>
           <HeaderLogo />
           <StyledHeaderNavList />
@@ -50,7 +50,7 @@ const Header = () => {
   }
 
   return (
-    <StyledAppBar elevation={0}>
+    <StyledAppBar elevation={0} position="sticky">
       <StyledToolBar disableGutters>
         <StyledHeaderTitle label="Menu" />
         <IconButton icon="search" />

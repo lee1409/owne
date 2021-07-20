@@ -3,9 +3,8 @@ import { BottomNavigation } from "@material-ui/core"
 import { styled } from "@material-ui/core/styles"
 
 import BottomNavigationAction from "./BottomNavigationAction"
-import { Footer } from "../Layout"
 
-const StyledFooter = styled(Footer)(() => ({
+const StyledFooter = styled("footer")(() => ({
   width: "100vw",
   position: "fixed",
   bottom: 0,
