@@ -9,12 +9,15 @@ import { useMediaQueryUp } from "../../utils/hook"
 const StyledToolBar = styled(Toolbar)(({ theme }) => ({
   margin: theme.spacing(2, 4, 0, 4),
   height: "100%",
+  [theme.breakpoints.up("lg")]: {
+    margin: theme.spacing(2, 10, 0, 10),
+  },
 }))
 
 const StyledAppBar = styled(AppBar)(({ theme }) => ({
   height: "100px",
-  backgroundColor: theme.palette.primary.main,
-  color: theme.palette.secondary.main,
+  backgroundColor: theme.palette.background.default,
+  color: theme.palette.primary.main,
 }))
 
 const StyledHeaderNavList = styled(HeaderNavList)(({ theme }) => ({

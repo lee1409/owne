@@ -1,6 +1,8 @@
 import { FC } from "react"
 import clsx from "clsx"
-import { HeaderNavButton } from "../Button"
+
+import HeaderNavAction from "./HeaderNavAction"
+import ROUTE_NAME from "../../Router/routeName"
 
 type HeaderNavListProps = {
   className?: string
@@ -8,11 +10,12 @@ type HeaderNavListProps = {
 
 const HeaderNavList: FC<HeaderNavListProps> = ({ className }) => {
   const classes = clsx(className)
+
   return (
     <div className={classes}>
-      <HeaderNavButton label="Explore" />
-      <HeaderNavButton label="Menu" />
-      <HeaderNavButton label="Stories" />
+      <HeaderNavAction label="Explore" route={ROUTE_NAME.EXPLORE} />
+      <HeaderNavAction label="Menu" route={ROUTE_NAME.MENU} />
+      <HeaderNavAction label="Stories" route={ROUTE_NAME.STORIES} />
     </div>
   )
 }

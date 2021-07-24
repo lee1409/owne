@@ -27,7 +27,7 @@ const SearchIconContainer = styled("div")(({ theme }) => ({
 
 const useStyles = makeStyles((theme: Theme) => ({
   inputRoot: {
-    color: theme.palette.secondary.main,
+    color: theme.palette.primary.main,
   },
   inputInput: {
     padding: theme.spacing(1, 1, 1, 0),
