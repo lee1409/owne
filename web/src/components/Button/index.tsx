@@ -4,24 +4,15 @@ import {
   IconButtonProps as MuiIconButtonProps,
   ButtonProps,
 } from "@material-ui/core"
-import {
-  Search,
-  AddCircleOutlineOutlined,
-  SvgIconComponent,
-} from "@material-ui/icons"
 import { styled } from "@material-ui/core/styles"
 import { HeaderNavLabel } from "../Typography"
+import Icon from "../Icon"
 
 const StyledIconButtonContainer = styled(MuiIconButton)(({ theme }) => ({
   color: theme.palette.secondary.main,
 }))
 
-type IconType = "search" | "add"
-
-const icons: Record<IconType, SvgIconComponent> = {
-  search: Search,
-  add: AddCircleOutlineOutlined,
-}
+type IconType = "Search" | "AddCircle"
 
 type IconButtonProps = {
   icon: IconType
@@ -29,10 +20,9 @@ type IconButtonProps = {
 
 export const IconButton = (props: IconButtonProps) => {
   const { icon } = props
-  const Icon = icons[icon]
   return (
     <StyledIconButtonContainer {...props}>
-      <Icon />
+      <Icon variant={icon} />
     </StyledIconButtonContainer>
   )
 }

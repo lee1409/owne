@@ -7,7 +7,7 @@ import HeaderNavList from "../HeaderNavList"
 import { useMediaQueryUp } from "../../utils/hook"
 
 const StyledToolBar = styled(Toolbar)(({ theme }) => ({
-  margin: theme.spacing(2, 10, 0, 10),
+  margin: theme.spacing(2, 4, 0, 4),
   height: "100%",
 }))
 
@@ -53,8 +53,8 @@ const Header = () => {
     <StyledAppBar elevation={0} position="sticky">
       <StyledToolBar disableGutters>
         <StyledHeaderTitle label="Menu" />
-        <IconButton icon="search" />
-        <IconButton icon="add" edge="end" />
+        <IconButton icon="Search" />
+        <IconButton icon="AddCircle" edge="end" />
       </StyledToolBar>
     </StyledAppBar>
   )

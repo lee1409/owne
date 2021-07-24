@@ -30,3 +30,8 @@ export const FoodName = styled(Typography)({
 export const SectionTitle = styled(Typography)({
   fontSize: "1rem",
 })
+
+export const LocationName = styled(Typography)({
+  fontSize: "1rem",
+  fontWeight: 600,
+})

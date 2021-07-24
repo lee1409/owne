@@ -1,8 +1,8 @@
 import { FC } from "react"
 import { InputBase, makeStyles, Theme, fade } from "@material-ui/core"
 import { styled } from "@material-ui/core/styles"
-import { Search } from "@material-ui/icons"
 import clsx from "clsx"
+import Icon from "../Icon"
 
 const SearchContainer = styled("div")(({ theme }) => ({
   position: "relative",
@@ -51,7 +51,7 @@ const SearchBar: FC<SearchBarProps> = ({ className }) => {
   return (
     <SearchContainer className={containerClassName}>
       <SearchIconContainer>
-        <Search />
+        <Icon variant="Search" />
       </SearchIconContainer>
       <InputBase
         classes={{
