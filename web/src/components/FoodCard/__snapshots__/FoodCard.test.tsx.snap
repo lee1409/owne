@@ -1,5 +1,114 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`FoodCard with description: FoodCard 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="div-root-9 div-root-10"
+      >
+        <div
+          class="MuiPaper-root MuiCard-root MuiPaper-elevation4 MuiPaper-rounded"
+        >
+          <div
+            class="MuiCardMedia-root WithStyles(ForwardRef(CardMedia))-root-11 WithStyles(ForwardRef(CardMedia))-root-12"
+            style="background-image: url(#);"
+            title="ChickenSoup"
+          />
+        </div>
+        <p
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-15 Styled(WithStyles(ForwardRef(Typography)))-root-13 Styled(WithStyles(ForwardRef(Typography)))-root-14 MuiTypography-body1"
+        >
+          Test
+        </p>
+        <p
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-16 MuiTypography-body1"
+        >
+          Pariatur aliqua proident in exercitation nulla commodo aute velit duis dolore.
+        </p>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="div-root-9 div-root-10"
+    >
+      <div
+        class="MuiPaper-root MuiCard-root MuiPaper-elevation4 MuiPaper-rounded"
+      >
+        <div
+          class="MuiCardMedia-root WithStyles(ForwardRef(CardMedia))-root-11 WithStyles(ForwardRef(CardMedia))-root-12"
+          style="background-image: url(#);"
+          title="ChickenSoup"
+        />
+      </div>
+      <p
+        class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-15 Styled(WithStyles(ForwardRef(Typography)))-root-13 Styled(WithStyles(ForwardRef(Typography)))-root-14 MuiTypography-body1"
+      >
+        Test
+      </p>
+      <p
+        class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-16 MuiTypography-body1"
+      >
+        Pariatur aliqua proident in exercitation nulla commodo aute velit duis dolore.
+      </p>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
 exports[`FoodCard: FoodCard 1`] = `
 Object {
   "asFragment": [Function],
@@ -9,7 +118,7 @@ Object {
         class="div-root-1 div-root-2"
       >
         <div
-          class="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded"
+          class="MuiPaper-root MuiCard-root MuiPaper-elevation4 MuiPaper-rounded"
         >
           <div
             class="MuiCardMedia-root WithStyles(ForwardRef(CardMedia))-root-3 WithStyles(ForwardRef(CardMedia))-root-4"
@@ -22,6 +131,9 @@ Object {
         >
           Test
         </p>
+        <p
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-8 MuiTypography-body1"
+        />
       </div>
     </div>
   </body>,
@@ -30,7 +142,7 @@ Object {
       class="div-root-1 div-root-2"
     >
       <div
-        class="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded"
+        class="MuiPaper-root MuiCard-root MuiPaper-elevation4 MuiPaper-rounded"
       >
         <div
           class="MuiCardMedia-root WithStyles(ForwardRef(CardMedia))-root-3 WithStyles(ForwardRef(CardMedia))-root-4"
@@ -43,6 +155,9 @@ Object {
       >
         Test
       </p>
+      <p
+        class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-8 MuiTypography-body1"
+      />
     </div>
   </div>,
   "debug": [Function],

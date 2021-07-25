@@ -24,7 +24,7 @@ export const HeaderNavLabel = ({ ...props }) => (
 )
 
 export const FoodName = styled(Typography)({
-  fontSize: "0.75rem",
+  fontSize: "0.875rem",
 })
 
 export const SectionTitle = styled(Typography)({
@@ -34,4 +34,8 @@ export const SectionTitle = styled(Typography)({
 export const LocationName = styled(Typography)({
   fontSize: "1rem",
   fontWeight: 600,
+})
+
+export const FoodDescription = styled(Typography)({
+  fontSize: "0.75rem",
 })
