@@ -4097,6 +4097,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@owne/cms@workspace:cms"
   dependencies:
+    dotenv: ^10.0.0
     knex: 0.21.18
     pg: ^8.6.0
     sqlite3: 5.0.0
@@ -19490,7 +19491,6 @@ fsevents@^1.2.7:
   dependencies:
     "@testing-library/jest-dom": ^5.14.1
     "@types/jest": ^26.0.24
-    dotenv: ^10.0.0
     eslint-config-prettier: ^8.3.0
     husky: ^6.0.0
     lerna: ^4.0.0
