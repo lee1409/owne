@@ -10,7 +10,7 @@ export const HeaderLogo = ({ ...props }) => (
 )
 
 type HeaderTitleProps = {
-  label: RouteName
+  label: string
 } & TypographyProps
 
 export const HeaderTitle = ({ ...props }: HeaderTitleProps) => (

@@ -1,17 +1,12 @@
 import { render } from "@testing-library/react"
-import { HeaderNavButton, IconButton } from "."
+import { IconButton } from "."
 
 test("AddButton", () => {
-  const addButton = render(<IconButton icon="add" />)
+  const addButton = render(<IconButton icon="AddCircle" />)
   expect(addButton).toMatchSnapshot("AddButton")
 })
 
-test("HeaderNavButton", () => {
-  const headerNaveButton = render(<HeaderNavButton />)
-  expect(headerNaveButton).toMatchSnapshot("HeaderNavButton")
-})
-
 test("SearchButton", () => {
-  const searchButton = render(<IconButton icon="search" />)
+  const searchButton = render(<IconButton icon="Search" />)
   expect(searchButton).toMatchSnapshot("SearchButton")
 })

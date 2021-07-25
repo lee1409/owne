@@ -1,8 +1,24 @@
 import { FC } from "react"
 import clsx from "clsx"
+import { useLocation, useHistory } from "react-router-dom"
 
 import HeaderNavAction from "./HeaderNavAction"
 import ROUTE_NAME from "../../Router/routeName"
+
+const actions = [
+  {
+    label: "Explore",
+    route: ROUTE_NAME.EXPLORE,
+  },
+  {
+    label: "Menu",
+    route: ROUTE_NAME.MENU,
+  },
+  {
+    label: "Stories",
+    route: ROUTE_NAME.STORIES,
+  },
+]
 
 type HeaderNavListProps = {
   className?: string
@@ -10,12 +26,27 @@ type HeaderNavListProps = {
 
 const HeaderNavList: FC<HeaderNavListProps> = ({ className }) => {
   const classes = clsx(className)
+  const location = useLocation()
+  const { pathname } = location
+  const history = useHistory()
+
+  const navigateTo = (route: string) => {
+    history.push(route)
+  }
 
   return (
     <div className={classes}>
-      <HeaderNavAction label="Explore" route={ROUTE_NAME.EXPLORE} />
-      <HeaderNavAction label="Menu" route={ROUTE_NAME.MENU} />
-      <HeaderNavAction label="Stories" route={ROUTE_NAME.STORIES} />
+      {actions.map(action => {
+        const isActive = pathname === action.route
+        return (
+          <HeaderNavAction
+            key={action.route}
+            label={action.label}
+            color={isActive ? "primary" : "secondary"}
+            onClick={() => navigateTo(action.route)}
+          />
+        )
+      })}
     </div>
   )
 }
