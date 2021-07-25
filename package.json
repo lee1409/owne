@@ -6,7 +6,8 @@
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,json,css,scss,md}'",
     "prepare": "husky install",
     "cms:predeploy": "cd cms && yarn predeploy",
-    "cms:deploy": "cd cms && yarn deploy"
+    "cms:deploy": "cd cms && yarn deploy",
+    "web:build": "cd web && yarn build"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.14.1",
