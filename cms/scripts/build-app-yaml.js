@@ -31,16 +31,5 @@ console.log(
       DATABASE_USERNAME: process.env.DATABASE_USERNAME,
       DATABASE_PASSWORD: process.env.DATABASE_PASSWORD,
     },
-    handlers: [
-      {
-        url: '.*',
-        script: 'auto',
-        headers: {
-          'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Methods': 'POST, GET, OPTIONS, PUT, DELETE',
-          'Access-Control-Allow-Credentials': true,
-        },
-      },
-    ],
   })
 );
