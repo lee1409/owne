@@ -13,6 +13,7 @@
     "deploy": "yarn predeploy && gcloud app deploy app.yaml --quiet"
   },
   "dependencies": {
+    "dotenv": "^10.0.0",
     "knex": "0.21.18",
     "pg": "^8.6.0",
     "sqlite3": "5.0.0",

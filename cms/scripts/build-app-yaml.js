@@ -1,4 +1,5 @@
 const YAML = require('yaml');
+require('dotenv').config();
 
 function check(ele) {
   if (!process.env[ele]) {
