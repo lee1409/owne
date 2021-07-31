@@ -1,41 +1,41 @@
-import { Typography, TypographyProps } from "@material-ui/core"
+import { Typography } from "@material-ui/core"
 import { styled } from "@material-ui/core/styles"
 
-export const H1 = ({ ...props }) => <Typography variant="h1" {...props} />
+const StyledHeaderLogo = styled(Typography)({
+  fontSize: "2.125rem",
+})
 
 export const HeaderLogo = ({ ...props }) => (
-  <Typography variant="h4" {...props}>
-    Owne
-  </Typography>
+  <StyledHeaderLogo {...props}>Owne</StyledHeaderLogo>
 )
 
-type HeaderTitleProps = {
-  label: string
-} & TypographyProps
+const StyledHeaderTitle = styled(Typography)({
+  fontSize: "2rem",
+})
 
-export const HeaderTitle = ({ ...props }: HeaderTitleProps) => (
-  <Typography variant="h5" {...props}>
-    {props.label}
-  </Typography>
-)
+export const HeaderTitle = ({ ...props }) => <StyledHeaderTitle {...props} />
+
+const StyledHeaderNavLabel = styled(Typography)({
+  fontSize: "1.375rem",
+})
 
 export const HeaderNavLabel = ({ ...props }) => (
-  <Typography variant="body1" {...props} />
+  <StyledHeaderNavLabel {...props} />
 )
 
 export const FoodName = styled(Typography)({
-  fontSize: "0.875rem",
+  fontSize: "1.125rem",
 })
 
 export const SectionTitle = styled(Typography)({
-  fontSize: "1rem",
+  fontSize: "1.25rem",
 })
 
 export const LocationName = styled(Typography)({
-  fontSize: "1rem",
+  fontSize: "1.375rem",
   fontWeight: 600,
 })
 
 export const FoodDescription = styled(Typography)({
-  fontSize: "0.75rem",
+  fontSize: "1rem",
 })

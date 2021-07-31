@@ -55,7 +55,7 @@ const Header = () => {
   return (
     <StyledAppBar elevation={0} position="sticky">
       <StyledToolBar disableGutters>
-        <StyledHeaderTitle label="Menu" />
+        <StyledHeaderTitle>Menu</StyledHeaderTitle>
         <IconButton icon="Search" />
         <IconButton icon="AddCircle" edge="end" />
       </StyledToolBar>
