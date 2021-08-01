@@ -39,3 +39,7 @@ export const LocationName = styled(Typography)({
 export const FoodDescription = styled(Typography)({
   fontSize: "1rem",
 })
+
+export const SidebarActionLabel = styled(Typography)({
+  fontSize: "1.5rem",
+})

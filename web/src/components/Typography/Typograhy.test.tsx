@@ -1,12 +1,12 @@
 import React from "react"
 import { render } from "@testing-library/react"
 import {
-  H1,
   HeaderLogo,
   HeaderTitle,
   HeaderNavLabel,
   FoodName,
   SectionTitle,
+  SidebarActionLabel,
 } from "."
 
 test("HeaderLogo", () => {
@@ -32,4 +32,11 @@ test("FoodName", () => {
 test("SectionTitle", () => {
   const sectionTitle = render(<SectionTitle>Testing</SectionTitle>)
   expect(sectionTitle).toMatchSnapshot("SectionTitle")
+})
+
+test("SidebarActionLabel", () => {
+  const sidebarActionLabel = render(
+    <SidebarActionLabel>Testing</SidebarActionLabel>
+  )
+  expect(sidebarActionLabel).toMatchSnapshot("SidebarActionLabel")
 })

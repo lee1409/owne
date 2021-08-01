@@ -9,7 +9,7 @@ import Location from "../../components/Location"
 const Menu = () => {
   return (
     <>
-      <Container>
+      <Container fixed>
         <GridContainer spacing={2}>
           <GridContainer item xs={12}>
             <Location location="ABC Restaurant" />
@@ -28,8 +28,42 @@ const Menu = () => {
           </GridContainer>
         </GridContainer>
       </Container>
-      <Container>
+      <Container fixed>
         <GridContainer spacing={2}>
+          <GridContainer item xs={12} md={6} lg={4}>
+            <FoodCard
+              src={ChickenSoup}
+              name="Chicken Soup"
+              description="Adipisicing proident laborum ea in culpa cillum non excepteur voluptate consequat."
+              tags={[
+                {
+                  label: "average",
+                  count: 5,
+                },
+                {
+                  label: "average",
+                  count: 5,
+                },
+              ]}
+            />
+          </GridContainer>
+          <GridContainer item xs={12} md={6} lg={4}>
+            <FoodCard
+              src={ChickenSoup}
+              name="Chicken Soup"
+              description="Adipisicing proident laborum ea in culpa cillum non excepteur voluptate consequat."
+              tags={[
+                {
+                  label: "average",
+                  count: 5,
+                },
+                {
+                  label: "average",
+                  count: 5,
+                },
+              ]}
+            />
+          </GridContainer>
           <GridContainer item xs={12} md={6} lg={4}>
             <FoodCard
               src={ChickenSoup}

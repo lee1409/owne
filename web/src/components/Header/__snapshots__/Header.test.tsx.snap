@@ -11,14 +11,13 @@ Object {
         <div
           class="MuiToolbar-root MuiToolbar-regular WithStyles(ForwardRef(Toolbar))-root-3 WithStyles(ForwardRef(Toolbar))-root-4"
         >
-          <h5
-            class="MuiTypography-root HeaderTitle-root-5 HeaderTitle-root-6 MuiTypography-h5"
-            label="Menu"
+          <p
+            class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-7 HeaderTitle-root-5 HeaderTitle-root-6 MuiTypography-body1"
           >
             Menu
-          </h5>
+          </p>
           <button
-            class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-7 WithStyles(ForwardRef(IconButton))-root-8"
+            class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-8 WithStyles(ForwardRef(IconButton))-root-9"
             icon="Search"
             tabindex="0"
             type="button"
@@ -40,7 +39,7 @@ Object {
             />
           </button>
           <button
-            class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-7 WithStyles(ForwardRef(IconButton))-root-9 MuiIconButton-edgeEnd"
+            class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-8 WithStyles(ForwardRef(IconButton))-root-10 MuiIconButton-edgeEnd"
             icon="AddCircle"
             tabindex="0"
             type="button"
@@ -72,14 +71,13 @@ Object {
       <div
         class="MuiToolbar-root MuiToolbar-regular WithStyles(ForwardRef(Toolbar))-root-3 WithStyles(ForwardRef(Toolbar))-root-4"
       >
-        <h5
-          class="MuiTypography-root HeaderTitle-root-5 HeaderTitle-root-6 MuiTypography-h5"
-          label="Menu"
+        <p
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-7 HeaderTitle-root-5 HeaderTitle-root-6 MuiTypography-body1"
         >
           Menu
-        </h5>
+        </p>
         <button
-          class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-7 WithStyles(ForwardRef(IconButton))-root-8"
+          class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-8 WithStyles(ForwardRef(IconButton))-root-9"
           icon="Search"
           tabindex="0"
           type="button"
@@ -101,7 +99,7 @@ Object {
           />
         </button>
         <button
-          class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-7 WithStyles(ForwardRef(IconButton))-root-9 MuiIconButton-edgeEnd"
+          class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-8 WithStyles(ForwardRef(IconButton))-root-10 MuiIconButton-edgeEnd"
           icon="AddCircle"
           tabindex="0"
           type="button"

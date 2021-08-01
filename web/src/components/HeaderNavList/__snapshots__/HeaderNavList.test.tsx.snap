@@ -18,7 +18,7 @@ Object {
             class="MuiButton-label"
           >
             <p
-              class="MuiTypography-root MuiTypography-body1"
+              class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-3 MuiTypography-body1"
             >
               Explore
             </p>
@@ -28,7 +28,7 @@ Object {
           />
         </button>
         <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text WithStyles(ForwardRef(Button))-root-1 WithStyles(ForwardRef(Button))-root-3 MuiButton-textSecondary"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text WithStyles(ForwardRef(Button))-root-1 WithStyles(ForwardRef(Button))-root-4 MuiButton-textSecondary"
           label="Menu"
           tabindex="0"
           type="button"
@@ -37,7 +37,7 @@ Object {
             class="MuiButton-label"
           >
             <p
-              class="MuiTypography-root MuiTypography-body1"
+              class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-3 MuiTypography-body1"
             >
               Menu
             </p>
@@ -47,7 +47,7 @@ Object {
           />
         </button>
         <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text WithStyles(ForwardRef(Button))-root-1 WithStyles(ForwardRef(Button))-root-4 MuiButton-textSecondary"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text WithStyles(ForwardRef(Button))-root-1 WithStyles(ForwardRef(Button))-root-5 MuiButton-textSecondary"
           label="Stories"
           tabindex="0"
           type="button"
@@ -56,7 +56,7 @@ Object {
             class="MuiButton-label"
           >
             <p
-              class="MuiTypography-root MuiTypography-body1"
+              class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-3 MuiTypography-body1"
             >
               Stories
             </p>
@@ -82,7 +82,7 @@ Object {
           class="MuiButton-label"
         >
           <p
-            class="MuiTypography-root MuiTypography-body1"
+            class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-3 MuiTypography-body1"
           >
             Explore
           </p>
@@ -92,7 +92,7 @@ Object {
         />
       </button>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-text WithStyles(ForwardRef(Button))-root-1 WithStyles(ForwardRef(Button))-root-3 MuiButton-textSecondary"
+        class="MuiButtonBase-root MuiButton-root MuiButton-text WithStyles(ForwardRef(Button))-root-1 WithStyles(ForwardRef(Button))-root-4 MuiButton-textSecondary"
         label="Menu"
         tabindex="0"
         type="button"
@@ -101,7 +101,7 @@ Object {
           class="MuiButton-label"
         >
           <p
-            class="MuiTypography-root MuiTypography-body1"
+            class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-3 MuiTypography-body1"
           >
             Menu
           </p>
@@ -111,7 +111,7 @@ Object {
         />
       </button>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-text WithStyles(ForwardRef(Button))-root-1 WithStyles(ForwardRef(Button))-root-4 MuiButton-textSecondary"
+        class="MuiButtonBase-root MuiButton-root MuiButton-text WithStyles(ForwardRef(Button))-root-1 WithStyles(ForwardRef(Button))-root-5 MuiButton-textSecondary"
         label="Stories"
         tabindex="0"
         type="button"
@@ -120,7 +120,7 @@ Object {
           class="MuiButton-label"
         >
           <p
-            class="MuiTypography-root MuiTypography-body1"
+            class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-3 MuiTypography-body1"
           >
             Stories
           </p>
