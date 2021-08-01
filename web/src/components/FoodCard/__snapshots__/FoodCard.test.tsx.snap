@@ -1,57 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AddButton: AddButton 1`] = `
+exports[`FoodCard with description: FoodCard 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <button
-        class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-1 WithStyles(ForwardRef(IconButton))-root-2"
-        icon="AddCircle"
-        tabindex="0"
-        type="button"
+      <div
+        class="div-root-9 div-root-10"
       >
-        <span
-          class="MuiIconButton-label"
+        <div
+          class="MuiPaper-root MuiCard-root MuiPaper-elevation4 MuiPaper-rounded"
         >
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <span />
-          </svg>
-        </span>
-        <span
-          class="MuiTouchRipple-root"
-        />
-      </button>
+          <div
+            class="MuiCardMedia-root WithStyles(ForwardRef(CardMedia))-root-11 WithStyles(ForwardRef(CardMedia))-root-12"
+            style="background-image: url(#);"
+            title="ChickenSoup"
+          />
+        </div>
+        <p
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-15 Styled(WithStyles(ForwardRef(Typography)))-root-13 Styled(WithStyles(ForwardRef(Typography)))-root-14 MuiTypography-body1"
+        >
+          Test
+        </p>
+        <p
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-16 MuiTypography-body1"
+        >
+          Pariatur aliqua proident in exercitation nulla commodo aute velit duis dolore.
+        </p>
+      </div>
     </div>
   </body>,
   "container": <div>
-    <button
-      class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-1 WithStyles(ForwardRef(IconButton))-root-2"
-      icon="AddCircle"
-      tabindex="0"
-      type="button"
+    <div
+      class="div-root-9 div-root-10"
     >
-      <span
-        class="MuiIconButton-label"
+      <div
+        class="MuiPaper-root MuiCard-root MuiPaper-elevation4 MuiPaper-rounded"
       >
-        <svg
-          aria-hidden="true"
-          class="MuiSvgIcon-root"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <span />
-        </svg>
-      </span>
-      <span
-        class="MuiTouchRipple-root"
-      />
-    </button>
+        <div
+          class="MuiCardMedia-root WithStyles(ForwardRef(CardMedia))-root-11 WithStyles(ForwardRef(CardMedia))-root-12"
+          style="background-image: url(#);"
+          title="ChickenSoup"
+        />
+      </div>
+      <p
+        class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-15 Styled(WithStyles(ForwardRef(Typography)))-root-13 Styled(WithStyles(ForwardRef(Typography)))-root-14 MuiTypography-body1"
+      >
+        Test
+      </p>
+      <p
+        class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-16 MuiTypography-body1"
+      >
+        Pariatur aliqua proident in exercitation nulla commodo aute velit duis dolore.
+      </p>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -107,58 +109,56 @@ Object {
 }
 `;
 
-exports[`SearchButton: SearchButton 1`] = `
+exports[`FoodCard: FoodCard 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <button
-        class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-3 WithStyles(ForwardRef(IconButton))-root-4"
-        icon="Search"
-        tabindex="0"
-        type="button"
+      <div
+        class="div-root-1 div-root-2"
       >
-        <span
-          class="MuiIconButton-label"
+        <div
+          class="MuiPaper-root MuiCard-root MuiPaper-elevation4 MuiPaper-rounded"
         >
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <span />
-          </svg>
-        </span>
-        <span
-          class="MuiTouchRipple-root"
+          <div
+            class="MuiCardMedia-root WithStyles(ForwardRef(CardMedia))-root-3 WithStyles(ForwardRef(CardMedia))-root-4"
+            style="background-image: url(#);"
+            title="ChickenSoup"
+          />
+        </div>
+        <p
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-7 Styled(WithStyles(ForwardRef(Typography)))-root-5 Styled(WithStyles(ForwardRef(Typography)))-root-6 MuiTypography-body1"
+        >
+          Test
+        </p>
+        <p
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-8 MuiTypography-body1"
         />
-      </button>
+      </div>
     </div>
   </body>,
   "container": <div>
-    <button
-      class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-3 WithStyles(ForwardRef(IconButton))-root-4"
-      icon="Search"
-      tabindex="0"
-      type="button"
+    <div
+      class="div-root-1 div-root-2"
     >
-      <span
-        class="MuiIconButton-label"
+      <div
+        class="MuiPaper-root MuiCard-root MuiPaper-elevation4 MuiPaper-rounded"
       >
-        <svg
-          aria-hidden="true"
-          class="MuiSvgIcon-root"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <span />
-        </svg>
-      </span>
-      <span
-        class="MuiTouchRipple-root"
+        <div
+          class="MuiCardMedia-root WithStyles(ForwardRef(CardMedia))-root-3 WithStyles(ForwardRef(CardMedia))-root-4"
+          style="background-image: url(#);"
+          title="ChickenSoup"
+        />
+      </div>
+      <p
+        class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-7 Styled(WithStyles(ForwardRef(Typography)))-root-5 Styled(WithStyles(ForwardRef(Typography)))-root-6 MuiTypography-body1"
+      >
+        Test
+      </p>
+      <p
+        class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-8 MuiTypography-body1"
       />
-    </button>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

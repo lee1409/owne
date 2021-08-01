@@ -1,4 +1,4 @@
-import { AppBar, Toolbar, CssBaseline, Avatar } from "@material-ui/core"
+import { Toolbar, Avatar, AppBar } from "@material-ui/core"
 import { styled } from "@material-ui/core/styles"
 import { HeaderTitle, HeaderLogo } from "../Typography"
 import { IconButton } from "../Button"
@@ -7,12 +7,17 @@ import HeaderNavList from "../HeaderNavList"
 import { useMediaQueryUp } from "../../utils/hook"
 
 const StyledToolBar = styled(Toolbar)(({ theme }) => ({
-  margin: theme.spacing(5, 10),
+  margin: theme.spacing(2, 4, 0, 4),
+  height: "100%",
+  [theme.breakpoints.up("lg")]: {
+    margin: theme.spacing(2, 10, 0, 10),
+  },
 }))
 
 const StyledAppBar = styled(AppBar)(({ theme }) => ({
-  backgroundColor: theme.palette.primary.main,
-  color: theme.palette.secondary.main,
+  height: "100px",
+  backgroundColor: theme.palette.background.default,
+  color: theme.palette.primary.main,
 }))
 
 const StyledHeaderNavList = styled(HeaderNavList)(({ theme }) => ({
@@ -36,31 +41,25 @@ const Header = () => {
 
   if (matchedLg) {
     return (
-      <>
-        <CssBaseline />
-        <StyledAppBar elevation={0}>
-          <StyledToolBar disableGutters>
-            <HeaderLogo />
-            <StyledHeaderNavList />
-            <StyledSearchBar />
-            <Avatar alt="Test User" />
-          </StyledToolBar>
-        </StyledAppBar>
-      </>
+      <StyledAppBar elevation={0} position="sticky">
+        <StyledToolBar disableGutters>
+          <HeaderLogo />
+          <StyledHeaderNavList />
+          <StyledSearchBar />
+          <Avatar alt="Test User" />
+        </StyledToolBar>
+      </StyledAppBar>
     )
   }
 
   return (
-    <>
-      <CssBaseline />
-      <StyledAppBar elevation={0}>
-        <StyledToolBar disableGutters>
-          <StyledHeaderTitle label="Menu" />
-          <IconButton icon="search" />
-          <IconButton icon="add" />
-        </StyledToolBar>
-      </StyledAppBar>
-    </>
+    <StyledAppBar elevation={0} position="sticky">
+      <StyledToolBar disableGutters>
+        <StyledHeaderTitle>Menu</StyledHeaderTitle>
+        <IconButton icon="Search" />
+        <IconButton icon="AddCircle" edge="end" />
+      </StyledToolBar>
+    </StyledAppBar>
   )
 }
 
