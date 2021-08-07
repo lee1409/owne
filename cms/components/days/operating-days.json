@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_days_operating_days",
+  "info": {
+    "name": "Operating Days",
+    "icon": "calendar"
+  },
+  "options": {},
+  "attributes": {
+    "Monday": {
+      "type": "boolean"
+    },
+    "Tuesday": {
+      "type": "boolean"
+    },
+    "Wednesday": {
+      "type": "boolean"
+    },
+    "Thursday": {
+      "type": "boolean"
+    },
+    "Friday": {
+      "type": "boolean"
+    },
+    "Saturday": {
+      "type": "boolean"
+    },
+    "Sunday": {
+      "type": "boolean"
+    }
+  }
+}

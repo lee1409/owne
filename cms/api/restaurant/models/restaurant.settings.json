@@ -27,15 +27,14 @@
     "address": {
       "type": "text"
     },
-    "comments": {
-      "model": "comment",
-      "via": "restaurant"
-    },
-    "hashtags": {
-      "collection": "hashtag"
+    "foods": {
+      "via": "restaurant",
+      "collection": "food"
     },
     "operating_days": {
-      "collection": "day"
+      "type": "component",
+      "repeatable": false,
+      "component": "days.operating-days"
     }
   }
 }
