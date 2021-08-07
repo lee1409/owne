@@ -43,6 +43,10 @@
       "plugin": "users-permissions",
       "model": "user",
       "via": "foods"
+    },
+    "categories": {
+      "via": "foods",
+      "collection": "category"
     }
   }
 }

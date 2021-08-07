@@ -35,6 +35,10 @@
       "type": "component",
       "repeatable": false,
       "component": "days.operating-days"
+    },
+    "categories": {
+      "via": "restaurants",
+      "collection": "category"
     }
   }
 }
