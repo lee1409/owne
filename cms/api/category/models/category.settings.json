@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "hashtags",
+  "collectionName": "categories",
   "info": {
-    "name": "Hashtag",
+    "name": "Category",
     "description": ""
   },
   "options": {
@@ -15,13 +15,15 @@
     "name": {
       "type": "string"
     },
-    "foods": {
-      "via": "hashtags",
-      "collection": "food"
+    "restaurants": {
+      "collection": "restaurant",
+      "via": "categories",
+      "dominant": true
     },
-    "stories": {
-      "via": "hashtags",
-      "collection": "story"
+    "foods": {
+      "collection": "food",
+      "via": "categories",
+      "dominant": true
     }
   }
 }

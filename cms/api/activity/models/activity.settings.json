@@ -1,8 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "comments",
+  "collectionName": "activities",
   "info": {
-    "name": "Comment"
+    "name": "Activity",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,14 +12,16 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "activities"
+    },
+    "type": {
       "type": "string"
     },
-    "content": {
+    "description": {
       "type": "richtext"
-    },
-    "rating": {
-      "type": "integer"
     }
   }
 }
