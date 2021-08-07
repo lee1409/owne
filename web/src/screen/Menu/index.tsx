@@ -7,6 +7,7 @@ import { SectionTitle } from "../../components/Typography"
 import ChickenSoup from "../../assets/chicken_soup.jpg"
 import Location from "../../components/Location"
 import { useMediaQueryUp } from "../../utils/hook"
+import MenuTabNavBar from "../../components/MenuTabNavBar"
 
 const LocationContainer = styled(Container)(({ theme }) => ({
   [theme.breakpoints.up("lg")]: {
@@ -29,22 +30,25 @@ const Menu = () => {
       </LocationContainer>
 
       {!matchedLg && (
-        <Container fixed>
-          <GridContainer spacing={2}>
-            <GridContainer item xs={12}>
-              <SectionTitle>Guess you would like</SectionTitle>
+        <>
+          <Container fixed>
+            <GridContainer spacing={2}>
+              <GridContainer item xs={12}>
+                <SectionTitle>Guess you would like</SectionTitle>
+              </GridContainer>
+              <GridContainer
+                item
+                xs={6}
+                sm={3}
+                justify="center"
+                alignItems="center"
+              >
+                <FoodCard src={ChickenSoup} name="Chicken Soup" />
+              </GridContainer>
             </GridContainer>
-            <GridContainer
-              item
-              xs={6}
-              sm={3}
-              justify="center"
-              alignItems="center"
-            >
-              <FoodCard src={ChickenSoup} name="Chicken Soup" />
-            </GridContainer>
-          </GridContainer>
-        </Container>
+          </Container>
+          <MenuTabNavBar />
+        </>
       )}
 
       <Container fixed>

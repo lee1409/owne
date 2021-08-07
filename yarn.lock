@@ -4317,12 +4317,14 @@ __metadata:
     "@types/react": ^17.0.14
     "@types/react-dom": ^17.0.9
     "@types/react-router-dom": ^5.1.8
+    "@types/styled-components": ^5.1.12
     clsx: ^1.1.1
     graphql: ^15.5.1
     react: ^17.0.2
     react-dom: ^17.0.2
     react-router-dom: ^5.2.0
     react-scripts: 4.0.3
+    styled-components: ^5.3.0
     typescript: ^4.3.5
     web-vitals: ^1.0.1
   languageName: unknown
@@ -5382,7 +5384,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/hoist-non-react-statics@npm:^3.3.0, @types/hoist-non-react-statics@npm:^3.3.1":
+"@types/hoist-non-react-statics@npm:*, @types/hoist-non-react-statics@npm:^3.3.0, @types/hoist-non-react-statics@npm:^3.3.1":
   version: 3.3.1
   resolution: "@types/hoist-non-react-statics@npm:3.3.1"
   dependencies:
@@ -5827,6 +5829,17 @@ __metadata:
   version: 2.0.0
   resolution: "@types/stack-utils@npm:2.0.0"
   checksum: 662312302e07685c99a1c45c6753eb997b31d2af66e646c5937f62d593a63a111289503d0b06a8d1e6f3922b67fc2ed94889d84653a08861a7fee67b81ce5b92
+  languageName: node
+  linkType: hard
+
+"@types/styled-components@npm:^5.1.12":
+  version: 5.1.12
+  resolution: "@types/styled-components@npm:5.1.12"
+  dependencies:
+    "@types/hoist-non-react-statics": "*"
+    "@types/react": "*"
+    csstype: ^3.0.2
+  checksum: 46822c41bf7e16598a7bf13c8d693754c9f2c607ae2052983a0630828809f6efd95d7493542a9a041b82799139ea7be95ff83cfae794ed5b0c6fd9ba3eaebf88
   languageName: node
   linkType: hard
 
@@ -27009,7 +27022,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"styled-components@npm:^5.2.3":
+"styled-components@npm:^5.2.3, styled-components@npm:^5.3.0":
   version: 5.3.0
   resolution: "styled-components@npm:5.3.0"
   dependencies:

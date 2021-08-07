@@ -1,13 +1,20 @@
 import { useState, ChangeEvent } from "react"
+import styled from "styled-components"
 import { Tabs, Tab } from "@material-ui/core"
-import { styled } from "@material-ui/core/styles"
 
-const StyledTabs = styled(Tabs)(({ theme }) => ({
-  borderWidth: "0 0 1px 0",
-  borderStyle: "solid",
-  borderColor: theme.palette.secondary.main,
-  width: "100%",
-}))
+const StyledTabs = styled(Tabs)`
+  ${({ theme }) => `
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: ${theme.palette.secondary[500]};
+  width: 100%;
+  margin-bottom: 20px;
+
+  & .MuiTabs-indicator {
+    display: none;
+  }
+  `}
+`
 
 const MenuTabNavBar = () => {
   const [activeTab, setActiveTab] = useState(0)
