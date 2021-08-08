@@ -29,7 +29,7 @@
     "publish-release": "lerna publish",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,json,css,scss,md}'",
     "prepare": "husky install",
-    "start": "npm-run-all --parallel web:start cms:start",
+    "start": "npm-run-all -l -p web:start cms:start",
     "cms:predeploy": "cd cms && yarn predeploy",
     "cms:deploy": "cd cms && yarn deploy",
     "cms:start": "cd cms && yarn start",
