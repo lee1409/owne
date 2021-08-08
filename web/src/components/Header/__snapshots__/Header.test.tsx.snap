@@ -29,6 +29,7 @@ Object {
                 aria-hidden="true"
                 class="MuiSvgIcon-root"
                 focusable="false"
+                variant="Search"
                 viewBox="0 0 24 24"
               >
                 <span />
@@ -51,6 +52,7 @@ Object {
                 aria-hidden="true"
                 class="MuiSvgIcon-root"
                 focusable="false"
+                variant="AddCircle"
                 viewBox="0 0 24 24"
               >
                 <span />
@@ -89,6 +91,7 @@ Object {
               aria-hidden="true"
               class="MuiSvgIcon-root"
               focusable="false"
+              variant="Search"
               viewBox="0 0 24 24"
             >
               <span />
@@ -111,6 +114,7 @@ Object {
               aria-hidden="true"
               class="MuiSvgIcon-root"
               focusable="false"
+              variant="AddCircle"
               viewBox="0 0 24 24"
             >
               <span />

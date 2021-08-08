@@ -5,6 +5,8 @@ import {
   HeaderTitle,
   HeaderNavLabel,
   FoodName,
+  FoodDescription,
+  LocationName,
   SectionTitle,
   SidebarActionLabel,
 } from "."
@@ -27,6 +29,16 @@ test("HeaderNavLabel", () => {
 test("FoodName", () => {
   const foodName = render(<FoodName>Testing</FoodName>)
   expect(foodName).toMatchSnapshot("FoodName")
+})
+
+test("FoodDescription", () => {
+  const foodDescription = render(<FoodDescription>Testing</FoodDescription>)
+  expect(foodDescription).toMatchSnapshot("FoodDescription")
+})
+
+test("LocationName", () => {
+  const locationName = render(<LocationName>Testing</LocationName>)
+  expect(locationName).toMatchSnapshot("LocationName")
 })
 
 test("SectionTitle", () => {
