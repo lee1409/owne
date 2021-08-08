@@ -1,14 +1,6 @@
 {
   "name": "owne",
   "private": true,
-  "scripts": {
-    "publish-release": "lerna publish",
-    "format": "prettier --write './**/*.{js,jsx,ts,tsx,json,css,scss,md}'",
-    "prepare": "husky install",
-    "cms:predeploy": "cd cms && yarn predeploy",
-    "cms:deploy": "cd cms && yarn deploy",
-    "web:build": "cd web && yarn build"
-  },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@types/jest": "^26.0.24",
@@ -16,6 +8,7 @@
     "husky": "^6.0.0",
     "lerna": "^4.0.0",
     "lint-staged": "^11.0.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.3.2",
     "shelljs": "^0.8.4",
     "yaml": "^1.10.2"
@@ -31,5 +24,16 @@
       "mobile",
       "web"
     ]
+  },
+  "scripts": {
+    "publish-release": "lerna publish",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,json,css,scss,md}'",
+    "prepare": "husky install",
+    "start": "npm-run-all -l -p web:start cms:start",
+    "cms:predeploy": "cd cms && yarn predeploy",
+    "cms:deploy": "cd cms && yarn deploy",
+    "cms:start": "cd cms && yarn start",
+    "web:start": "cd web && yarn start",
+    "web:build": "cd web && yarn build"
   }
 }
