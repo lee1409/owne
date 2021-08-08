@@ -31,10 +31,13 @@ export const SectionTitle = styled(Typography)({
   fontSize: "1.25rem",
 })
 
-export const LocationName = styled(Typography)({
+export const LocationName = styled(Typography)(({ theme }) => ({
   fontSize: "1.375rem",
   fontWeight: 600,
-})
+  [theme.breakpoints.up("lg")]: {
+    fontSize: "2rem",
+  },
+}))
 
 export const FoodDescription = styled(Typography)({
   fontSize: "1rem",

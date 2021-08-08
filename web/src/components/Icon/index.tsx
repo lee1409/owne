@@ -1,5 +1,5 @@
 import { Icon as Iconify } from "@iconify/react"
-import { SvgIcon } from "@material-ui/core"
+import { SvgIcon, SvgIconProps } from "@material-ui/core"
 import { FC } from "react"
 
 const icons = {
@@ -14,13 +14,13 @@ const icons = {
 
 type IconProps = {
   variant: keyof typeof icons
-}
+} & SvgIconProps
 
 const Icon: FC<IconProps> = props => {
   const { variant } = props
   const IconifyIcon = icons[variant]
 
-  return <SvgIcon>{IconifyIcon}</SvgIcon>
+  return <SvgIcon {...props}>{IconifyIcon}</SvgIcon>
 }
 
 export default Icon
