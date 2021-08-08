@@ -4317,6 +4317,7 @@ __metadata:
     "@types/react": ^17.0.14
     "@types/react-dom": ^17.0.9
     "@types/react-router-dom": ^5.1.8
+    "@types/seedrandom": ^3.0.1
     "@types/styled-components": ^5.1.12
     clsx: ^1.1.1
     graphql: ^15.5.1
@@ -4324,6 +4325,7 @@ __metadata:
     react-dom: ^17.0.2
     react-router-dom: ^5.2.0
     react-scripts: 4.0.3
+    seedrandom: ^3.0.5
     styled-components: ^5.3.0
     typescript: ^4.3.5
     web-vitals: ^1.0.1
@@ -5798,6 +5800,13 @@ __metadata:
   version: 0.16.1
   resolution: "@types/scheduler@npm:0.16.1"
   checksum: 0124c2e4dee5e9b8c8524fcd6b1b8ea0b807b132e593925db04cdcc92ca2779a0d27c79414e60454b4458361a4d8319fa2b59d20585054f21617d1e9acf46a6f
+  languageName: node
+  linkType: hard
+
+"@types/seedrandom@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@types/seedrandom@npm:3.0.1"
+  checksum: e843d985e654e41776c4dbb273c4ef497b41673391b1699f73a769cae6f3da1f6534ed41c367b02ad06803644f6ae93b6bf040f7ac78cf11795d9a1164ab4035
   languageName: node
   linkType: hard
 
@@ -25075,6 +25084,13 @@ resolve@^2.0.0-next.3:
     ajv: ^6.12.5
     ajv-keywords: ^3.5.2
   checksum: a084f593f222560c412a4d8f40c92386c01c1c709f27c0672c2f02927a4d4d475f57f8b8e91198d0defb452add160476a03f07a05b26200a64b5124fa874e158
+  languageName: node
+  linkType: hard
+
+"seedrandom@npm:^3.0.5":
+  version: 3.0.5
+  resolution: "seedrandom@npm:3.0.5"
+  checksum: 8ca859bd79cc6a4367783f19d802ef4651f957da388f162f45c4e32c4d4df8cb55649b25b9d66cf73f905d920640b8da9ae04418feb40b41c9c7c767a1c49691
   languageName: node
   linkType: hard
 

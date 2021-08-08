@@ -1,69 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SearchBar: SearchBar 1`] = `
+exports[`Sidebar Action: Sidebar Action 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="div-root-3 div-root-4"
+      <p
+        class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-1 MuiTypography-body1"
+        label="testing"
+        to="#"
       >
-        <div
-          class="div-root-5 div-root-6"
+        <a
+          class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+          href="#"
         >
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root"
-            focusable="false"
-            variant="Search"
-            viewBox="0 0 24 24"
-          >
-            <span />
-          </svg>
-        </div>
-        <div
-          class="MuiInputBase-root makeStyles-inputRoot-1"
-        >
-          <input
-            aria-label="search"
-            class="MuiInputBase-input makeStyles-inputInput-2"
-            placeholder="Search"
-            type="text"
-            value=""
-          />
-        </div>
-      </div>
+          testing
+        </a>
+      </p>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="div-root-3 div-root-4"
+    <p
+      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-1 MuiTypography-body1"
+      label="testing"
+      to="#"
     >
-      <div
-        class="div-root-5 div-root-6"
+      <a
+        class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+        href="#"
       >
-        <svg
-          aria-hidden="true"
-          class="MuiSvgIcon-root"
-          focusable="false"
-          variant="Search"
-          viewBox="0 0 24 24"
-        >
-          <span />
-        </svg>
-      </div>
-      <div
-        class="MuiInputBase-root makeStyles-inputRoot-1"
-      >
-        <input
-          aria-label="search"
-          class="MuiInputBase-input makeStyles-inputInput-2"
-          placeholder="Search"
-          type="text"
-          value=""
-        />
-      </div>
-    </div>
+        testing
+      </a>
+    </p>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

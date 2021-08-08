@@ -1,10 +1,13 @@
 import { styled } from "@material-ui/core/styles"
 import { FC, CSSProperties } from "react"
+import seedrandom from "seedrandom"
+
+const rng = seedrandom("1")
 
 function getRandomColor() {
   const colors = []
   for (var i = 0; i < 3; i++) {
-    colors.push(Math.floor(Math.random() * 256))
+    colors.push(Math.floor(rng() * 256))
   }
   const rgba = `rgba(${colors.join(",")},0.4)`
   return rgba

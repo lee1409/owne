@@ -1,69 +1,61 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SearchBar: SearchBar 1`] = `
+exports[`Location Bar: Location 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="div-root-3 div-root-4"
-      >
-        <div
-          class="div-root-5 div-root-6"
-        >
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root"
-            focusable="false"
-            variant="Search"
-            viewBox="0 0 24 24"
-          >
-            <span />
-          </svg>
-        </div>
-        <div
-          class="MuiInputBase-root makeStyles-inputRoot-1"
-        >
-          <input
-            aria-label="search"
-            class="MuiInputBase-input makeStyles-inputInput-2"
-            placeholder="Search"
-            type="text"
-            value=""
-          />
-        </div>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="div-root-3 div-root-4"
-    >
-      <div
-        class="div-root-5 div-root-6"
+      <button
+        class="MuiButtonBase-root"
+        location="test"
+        tabindex="0"
+        type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root"
+          class="MuiSvgIcon-root Icon-root-1 Icon-root-2"
           focusable="false"
-          variant="Search"
+          variant="Location"
           viewBox="0 0 24 24"
         >
           <span />
         </svg>
-      </div>
-      <div
-        class="MuiInputBase-root makeStyles-inputRoot-1"
-      >
-        <input
-          aria-label="search"
-          class="MuiInputBase-input makeStyles-inputInput-2"
-          placeholder="Search"
-          type="text"
-          value=""
+        <p
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-5 WithStyles(ForwardRef(Typography))-root-6 Styled(WithStyles(ForwardRef(Typography)))-root-3 Styled(WithStyles(ForwardRef(Typography)))-root-4 MuiTypography-body1"
+        >
+          test
+        </p>
+        <span
+          class="MuiTouchRipple-root"
         />
-      </div>
+      </button>
     </div>
+  </body>,
+  "container": <div>
+    <button
+      class="MuiButtonBase-root"
+      location="test"
+      tabindex="0"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root Icon-root-1 Icon-root-2"
+        focusable="false"
+        variant="Location"
+        viewBox="0 0 24 24"
+      >
+        <span />
+      </svg>
+      <p
+        class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-5 WithStyles(ForwardRef(Typography))-root-6 Styled(WithStyles(ForwardRef(Typography)))-root-3 Styled(WithStyles(ForwardRef(Typography)))-root-4 MuiTypography-body1"
+      >
+        test
+      </p>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

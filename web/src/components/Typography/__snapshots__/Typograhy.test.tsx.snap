@@ -1,5 +1,78 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`FoodDescription: FoodDescription 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <p
+        class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-5 MuiTypography-body1"
+      >
+        Testing
+      </p>
+    </div>
+  </body>,
+  "container": <div>
+    <p
+      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-5 MuiTypography-body1"
+    >
+      Testing
+    </p>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
 exports[`FoodName: FoodName 1`] = `
 Object {
   "asFragment": [Function],
@@ -292,13 +365,13 @@ Object {
 }
 `;
 
-exports[`SectionTitle: SectionTitle 1`] = `
+exports[`LocationName: LocationName 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <p
-        class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-5 MuiTypography-body1"
+        class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-6 WithStyles(ForwardRef(Typography))-root-7 MuiTypography-body1"
       >
         Testing
       </p>
@@ -306,7 +379,80 @@ Object {
   </body>,
   "container": <div>
     <p
-      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-5 MuiTypography-body1"
+      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-6 WithStyles(ForwardRef(Typography))-root-7 MuiTypography-body1"
+    >
+      Testing
+    </p>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`SectionTitle: SectionTitle 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <p
+        class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-8 MuiTypography-body1"
+      >
+        Testing
+      </p>
+    </div>
+  </body>,
+  "container": <div>
+    <p
+      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-8 MuiTypography-body1"
     >
       Testing
     </p>
@@ -371,7 +517,7 @@ Object {
   "baseElement": <body>
     <div>
       <p
-        class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-6 MuiTypography-body1"
+        class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-9 MuiTypography-body1"
       >
         Testing
       </p>
@@ -379,7 +525,7 @@ Object {
   </body>,
   "container": <div>
     <p
-      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-6 MuiTypography-body1"
+      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-9 MuiTypography-body1"
     >
       Testing
     </p>
