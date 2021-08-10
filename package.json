@@ -31,7 +31,7 @@
     "start": "npm-run-all -l -p web:start cms:start",
     "cms:predeploy": "cd cms && yarn predeploy",
     "cms:deploy": "cd cms && yarn deploy",
-    "cms:start": "cd cms && yarn start",
+    "cms:start": "cd cms && npm run-script start",
     "web:start": "cd web && yarn start",
     "web:build": "cd web && yarn build"
   }
