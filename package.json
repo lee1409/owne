@@ -20,7 +20,6 @@
   },
   "workspaces": {
     "packages": [
-      "cms",
       "mobile",
       "web"
     ]
