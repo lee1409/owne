@@ -21,7 +21,8 @@
   "workspaces": {
     "packages": [
       "mobile",
-      "web"
+      "web",
+      "cms"
     ]
   },
   "scripts": {
