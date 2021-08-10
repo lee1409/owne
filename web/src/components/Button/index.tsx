@@ -4,16 +4,14 @@ import {
 } from "@material-ui/core"
 import { styled } from "@material-ui/core/styles"
 
-import Icon from "../Icon"
+import Icon, { IconVariant } from "../Icon"
 
 const StyledIconButtonContainer = styled(MuiIconButton)(({ theme }) => ({
   color: theme.palette.primary.main,
 }))
 
-type IconType = "Search" | "AddCircle"
-
 type IconButtonProps = {
-  icon: IconType
+  icon: IconVariant
 } & MuiIconButtonProps
 
 export const IconButton = (props: IconButtonProps) => {

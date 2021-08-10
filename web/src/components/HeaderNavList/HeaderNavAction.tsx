@@ -3,8 +3,9 @@ import { styled } from "@material-ui/core/styles"
 
 import { HeaderNavLabel } from "../Typography"
 
-const StyledHeaderNavButton = styled(Button)(() => ({
+const StyledHeaderNavButton = styled(Button)(({ theme }) => ({
   textTransform: "none",
+  margin: `0 ${theme.spacing(3)}px`,
 }))
 
 type HeaderNavActionProps = {
