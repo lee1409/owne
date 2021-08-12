@@ -4,6 +4,7 @@ import { FoodMobileHeader } from "./FoodHeader"
 import { MenuMobileHeader } from "./MenuHeader"
 import ROUTE_NAME from "../../Router/routeName"
 import { useMediaQueryUp } from "../../utils/hook"
+import { getSegment } from "../../utils/urlHelper"
 
 const Header = () => {
   const matchedDesktop = useMediaQueryUp("lg")
@@ -15,7 +16,7 @@ const Header = () => {
   }
 
   // Mobile headers
-  switch (location.pathname) {
+  switch (getSegment(location.pathname, 1)) {
     case ROUTE_NAME.FOOD:
       return <FoodMobileHeader />
     case ROUTE_NAME.MENU:
