@@ -9,6 +9,7 @@ import {
   LocationName,
   SectionTitle,
   SidebarActionLabel,
+  FoodTitle,
 } from "."
 
 test("HeaderLogo", () => {
@@ -51,4 +52,10 @@ test("SidebarActionLabel", () => {
     <SidebarActionLabel>Testing</SidebarActionLabel>
   )
   expect(sidebarActionLabel).toMatchSnapshot("SidebarActionLabel")
+})
+
+// Food title in food screen
+test("FoodTitle", () => {
+  const foodTitle = render(<FoodTitle>Testing</FoodTitle>)
+  expect(foodTitle).toMatchSnapshot("FoodTitle")
 })

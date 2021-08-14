@@ -22,3 +22,21 @@ export const IconButton = (props: IconButtonProps) => {
     </StyledIconButtonContainer>
   )
 }
+
+const RoundedImage = styled("img")({
+  width: "60px",
+  height: "60px",
+  borderRadius: "50%",
+  border: "2px solid black",
+  objectFit: "cover",
+})
+
+type StoryButtonProps = {
+  src: string
+  alt: string
+  onClick?: React.MouseEventHandler<HTMLImageElement> // TBC
+}
+
+export const StoryButton = (props: StoryButtonProps) => {
+  return <RoundedImage {...props} />
+}

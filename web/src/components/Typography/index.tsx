@@ -46,3 +46,7 @@ export const FoodDescription = styled(Typography)({
 export const SidebarActionLabel = styled(Typography)({
   fontSize: "1.5rem",
 })
+
+export const FoodTitle = styled(Typography)({
+  fontSize: "1.5rem",
+})
