@@ -12,6 +12,7 @@ const icons = {
   AddCircle: <Iconify icon="ic:baseline-add-circle-outline" />,
   ArrowLeft: <Iconify icon="mdi:arrow-left" />,
   CircleEditOutline: <Iconify icon="mdi:circle-edit-outline" />,
+  HashTag: <Iconify icon="mdi:pound-box" />,
 }
 
 export type IconVariant = keyof typeof icons

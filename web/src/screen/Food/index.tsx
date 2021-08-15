@@ -1,4 +1,4 @@
-import { Container } from "@material-ui/core"
+import { Container, Box } from "@material-ui/core"
 
 import {
   FoodTitle,
@@ -8,6 +8,8 @@ import {
 import { GridContainer } from "../../components/Grid"
 import ImageCard from "../../components/ImageCard"
 import HorizontalDrawer from "../../components/HorizontalDrawer"
+import Tag from "../../components/Tag"
+import Icon from "../../components/Icon"
 
 import Story from "../../containers/Story"
 
@@ -46,6 +48,20 @@ const FoodScreen = () => {
               quis laborum velit minim exercitation ut. Consequat in fugiat
               occaecat consequat ut proident reprehenderit sit elit pariatur id.
             </FoodDescription>
+          </GridContainer>
+          <GridContainer item>
+            <SectionTitle>
+              #Foodtags&nbsp;
+              <Icon variant="HashTag" />
+            </SectionTitle>
+          </GridContainer>
+          <GridContainer item>
+            {/* TODO: load from API */}
+            <Tag label="Test" count={1} />
+            <Tag label="TestTest" count={1} />
+            <Tag label="TestTest" count={1} />
+            <Tag label="TestTest" count={1} />
+            <Tag label="TestTest" count={1} />
           </GridContainer>
         </GridContainer>
       </Container>

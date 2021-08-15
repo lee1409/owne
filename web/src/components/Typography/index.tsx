@@ -29,6 +29,9 @@ export const FoodName = styled(Typography)({
 
 export const SectionTitle = styled(Typography)({
   fontSize: "1.25rem",
+  // To align icons in the text
+  display: "flex",
+  alignItems: "center",
 })
 
 export const LocationName = styled(Typography)(({ theme }) => ({
