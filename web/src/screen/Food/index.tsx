@@ -1,4 +1,4 @@
-import { Container, Box } from "@material-ui/core"
+import { Container, Box, Typography } from "@material-ui/core"
 
 import {
   FoodTitle,
@@ -10,6 +10,7 @@ import ImageCard from "../../components/ImageCard"
 import HorizontalDrawer from "../../components/HorizontalDrawer"
 import Tag from "../../components/Tag"
 import Icon from "../../components/Icon"
+import { IconButton } from "../../components/Button"
 
 import Story from "../../containers/Story"
 
@@ -62,6 +63,25 @@ const FoodScreen = () => {
             <Tag label="TestTest" count={1} />
             <Tag label="TestTest" count={1} />
             <Tag label="TestTest" count={1} />
+          </GridContainer>
+          <GridContainer item>
+            <SectionTitle>Restaurent Details</SectionTitle>
+          </GridContainer>
+          <GridContainer item>
+            <GridContainer item xs={10}>
+              <Typography component="div">
+                <Box fontWeight="fontWeightRegular">Ah Beng Chicken Rice</Box>
+                <Box fontWeight="fontWeightRegular">
+                  123, Jalan Abc 456, Indah 5, 45500, Kuala Lumpur
+                </Box>
+                <Box fontWeight="fontWeightLight">
+                  Operating hour: 12.00 a.m. - 6 p.m.
+                </Box>
+              </Typography>
+            </GridContainer>
+            <GridContainer item xs={2} justify="center" alignItems="center">
+              <IconButton icon="Direction" />
+            </GridContainer>
           </GridContainer>
         </GridContainer>
       </Container>

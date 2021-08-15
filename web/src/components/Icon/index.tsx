@@ -13,6 +13,7 @@ const icons = {
   ArrowLeft: <Iconify icon="mdi:arrow-left" />,
   CircleEditOutline: <Iconify icon="mdi:circle-edit-outline" />,
   HashTag: <Iconify icon="mdi:pound-box" />,
+  Direction: <Iconify icon="mdi:directions" />,
 }
 
 export type IconVariant = keyof typeof icons
