@@ -2870,6 +2870,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fontsource/roboto@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "@fontsource/roboto@npm:4.5.0"
+  checksum: e719537c93a8745b170fecd1faf3c70503cc9429aa23f6da50837b602aebe678ac01e3769ba87329e96912610f80a8a77ec75fab1da6988c5d186bb78723dc41
+  languageName: node
+  linkType: hard
+
 "@formatjs/ecma402-abstract@npm:1.4.0":
   version: 1.4.0
   resolution: "@formatjs/ecma402-abstract@npm:1.4.0"
@@ -4623,6 +4630,7 @@ __metadata:
   resolution: "@owne/web@workspace:web"
   dependencies:
     "@apollo/client": ^3.4.5
+    "@fontsource/roboto": ^4.5.0
     "@iconify/react": alpha
     "@loadable/component": ^5.15.0
     "@material-ui/core": 4.11.4

@@ -5,6 +5,7 @@ import Layout from "../components/Layout"
 import ROUTE_NAME from "./routeName"
 
 const Menu = lazy(() => import("../screen/Menu"))
+const FoodScreen = lazy(() => import("../screen/Food"))
 const Explore = lazy(() => import("../screen/Explore"))
 const Page404 = lazy(() => import("../screen/Page404"))
 
@@ -14,6 +15,7 @@ const Router = () => (
       <Suspense fallback={<div>Loading...</div>}>
         <Switch>
           <Route path={ROUTE_NAME.MENU} component={Menu} />
+          <Route path={ROUTE_NAME.FOOD} component={FoodScreen} />
           <Route path={ROUTE_NAME.EXPLORE} component={Explore} />
           <Route path={ROUTE_NAME.PAGE_404} component={Page404} />
         </Switch>

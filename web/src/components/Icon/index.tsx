@@ -10,10 +10,16 @@ const icons = {
   More: <Iconify icon="mdi:dots-horizontal-circle" />,
   Search: <Iconify icon="ic:baseline-search" />,
   AddCircle: <Iconify icon="ic:baseline-add-circle-outline" />,
+  ArrowLeft: <Iconify icon="mdi:arrow-left" />,
+  CircleEditOutline: <Iconify icon="mdi:circle-edit-outline" />,
+  HashTag: <Iconify icon="mdi:pound-box" />,
+  Direction: <Iconify icon="mdi:directions" />,
 }
 
+export type IconVariant = keyof typeof icons
+
 type IconProps = {
-  variant: keyof typeof icons
+  variant: IconVariant
 } & SvgIconProps
 
 const Icon: FC<IconProps> = props => {

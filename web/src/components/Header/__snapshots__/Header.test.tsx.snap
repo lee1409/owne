@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header: Header 1`] = `
+exports[`Desktop Header: Desktop Header 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
@@ -11,13 +11,604 @@ Object {
         <div
           class="MuiToolbar-root MuiToolbar-regular WithStyles(ForwardRef(Toolbar))-root-3 WithStyles(ForwardRef(Toolbar))-root-4"
         >
+          <div
+            class="MuiBox-root MuiBox-root-5"
+          >
+            <p
+              class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-6 MuiTypography-body1"
+            >
+              Owne
+            </p>
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root-7"
+          >
+            <div
+              class=""
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-text WithStyles(ForwardRef(Button))-root-8 WithStyles(ForwardRef(Button))-root-9 MuiButton-textSecondary"
+                label="Explore"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <p
+                    class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-10 MuiTypography-body1"
+                  >
+                    Explore
+                  </p>
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-text WithStyles(ForwardRef(Button))-root-8 WithStyles(ForwardRef(Button))-root-11 MuiButton-textSecondary"
+                label="Menu"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <p
+                    class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-10 MuiTypography-body1"
+                  >
+                    Menu
+                  </p>
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-text WithStyles(ForwardRef(Button))-root-8 WithStyles(ForwardRef(Button))-root-12 MuiButton-textSecondary"
+                label="Stories"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <p
+                    class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-10 MuiTypography-body1"
+                  >
+                    Stories
+                  </p>
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root-13"
+          >
+            <div
+              class="div-root-16 div-root-17"
+            >
+              <div
+                class="div-root-18 div-root-19"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  variant="Search"
+                  viewBox="0 0 24 24"
+                >
+                  <span />
+                </svg>
+              </div>
+              <div
+                class="MuiInputBase-root makeStyles-inputRoot-14"
+              >
+                <input
+                  aria-label="search"
+                  class="MuiInputBase-input makeStyles-inputInput-15"
+                  placeholder="Search"
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root-20"
+          >
+            <div
+              class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiAvatar-fallback"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>,
+  "container": <div>
+    <header
+      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary WithStyles(ForwardRef(AppBar))-root-1 WithStyles(ForwardRef(AppBar))-root-2 MuiPaper-elevation0"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-regular WithStyles(ForwardRef(Toolbar))-root-3 WithStyles(ForwardRef(Toolbar))-root-4"
+      >
+        <div
+          class="MuiBox-root MuiBox-root-5"
+        >
           <p
-            class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-7 HeaderTitle-root-5 HeaderTitle-root-6 MuiTypography-body1"
+            class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-6 MuiTypography-body1"
+          >
+            Owne
+          </p>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root-7"
+        >
+          <div
+            class=""
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text WithStyles(ForwardRef(Button))-root-8 WithStyles(ForwardRef(Button))-root-9 MuiButton-textSecondary"
+              label="Explore"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <p
+                  class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-10 MuiTypography-body1"
+                >
+                  Explore
+                </p>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text WithStyles(ForwardRef(Button))-root-8 WithStyles(ForwardRef(Button))-root-11 MuiButton-textSecondary"
+              label="Menu"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <p
+                  class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-10 MuiTypography-body1"
+                >
+                  Menu
+                </p>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text WithStyles(ForwardRef(Button))-root-8 WithStyles(ForwardRef(Button))-root-12 MuiButton-textSecondary"
+              label="Stories"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <p
+                  class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-10 MuiTypography-body1"
+                >
+                  Stories
+                </p>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root-13"
+        >
+          <div
+            class="div-root-16 div-root-17"
+          >
+            <div
+              class="div-root-18 div-root-19"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                variant="Search"
+                viewBox="0 0 24 24"
+              >
+                <span />
+              </svg>
+            </div>
+            <div
+              class="MuiInputBase-root makeStyles-inputRoot-14"
+            >
+              <input
+                aria-label="search"
+                class="MuiInputBase-input makeStyles-inputInput-15"
+                placeholder="Search"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root-20"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiAvatar-fallback"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Food Mobile Header: Food Mobile Header 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header
+        class="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary WithStyles(ForwardRef(AppBar))-root-31 WithStyles(ForwardRef(AppBar))-root-32 MuiPaper-elevation0"
+      >
+        <div
+          class="MuiToolbar-root MuiToolbar-regular WithStyles(ForwardRef(Toolbar))-root-33 WithStyles(ForwardRef(Toolbar))-root-34"
+        >
+          <div
+            class="MuiBox-root MuiBox-root-35"
+          >
+            <button
+              class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-36 WithStyles(ForwardRef(IconButton))-root-37 MuiIconButton-edgeStart"
+              icon="ArrowLeft"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  variant="ArrowLeft"
+                  viewBox="0 0 24 24"
+                >
+                  <span />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root-38"
+          >
+            <button
+              class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-36 WithStyles(ForwardRef(IconButton))-root-39 MuiIconButton-edgeEnd"
+              icon="CircleEditOutline"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  variant="CircleEditOutline"
+                  viewBox="0 0 24 24"
+                >
+                  <span />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>,
+  "container": <div>
+    <header
+      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary WithStyles(ForwardRef(AppBar))-root-31 WithStyles(ForwardRef(AppBar))-root-32 MuiPaper-elevation0"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-regular WithStyles(ForwardRef(Toolbar))-root-33 WithStyles(ForwardRef(Toolbar))-root-34"
+      >
+        <div
+          class="MuiBox-root MuiBox-root-35"
+        >
+          <button
+            class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-36 WithStyles(ForwardRef(IconButton))-root-37 MuiIconButton-edgeStart"
+            icon="ArrowLeft"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                variant="ArrowLeft"
+                viewBox="0 0 24 24"
+              >
+                <span />
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root-38"
+        >
+          <button
+            class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-36 WithStyles(ForwardRef(IconButton))-root-39 MuiIconButton-edgeEnd"
+            icon="CircleEditOutline"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                variant="CircleEditOutline"
+                viewBox="0 0 24 24"
+              >
+                <span />
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Menu Mobile Header: Menu Mobile Header 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header
+        class="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary WithStyles(ForwardRef(AppBar))-root-21 WithStyles(ForwardRef(AppBar))-root-22 MuiPaper-elevation0"
+      >
+        <div
+          class="MuiToolbar-root MuiToolbar-regular WithStyles(ForwardRef(Toolbar))-root-23 WithStyles(ForwardRef(Toolbar))-root-24"
+        >
+          <div
+            class="MuiBox-root MuiBox-root-25"
+          >
+            <p
+              class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-26 MuiTypography-body1"
+            >
+              Menu
+            </p>
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root-27"
+          >
+            <button
+              class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-28 WithStyles(ForwardRef(IconButton))-root-29"
+              icon="Search"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  variant="Search"
+                  viewBox="0 0 24 24"
+                >
+                  <span />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-28 WithStyles(ForwardRef(IconButton))-root-30 MuiIconButton-edgeEnd"
+              icon="AddCircle"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  variant="AddCircle"
+                  viewBox="0 0 24 24"
+                >
+                  <span />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>,
+  "container": <div>
+    <header
+      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary WithStyles(ForwardRef(AppBar))-root-21 WithStyles(ForwardRef(AppBar))-root-22 MuiPaper-elevation0"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-regular WithStyles(ForwardRef(Toolbar))-root-23 WithStyles(ForwardRef(Toolbar))-root-24"
+      >
+        <div
+          class="MuiBox-root MuiBox-root-25"
+        >
+          <p
+            class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-26 MuiTypography-body1"
           >
             Menu
           </p>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root-27"
+        >
           <button
-            class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-8 WithStyles(ForwardRef(IconButton))-root-9"
+            class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-28 WithStyles(ForwardRef(IconButton))-root-29"
             icon="Search"
             tabindex="0"
             type="button"
@@ -40,7 +631,7 @@ Object {
             />
           </button>
           <button
-            class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-8 WithStyles(ForwardRef(IconButton))-root-10 MuiIconButton-edgeEnd"
+            class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-28 WithStyles(ForwardRef(IconButton))-root-30 MuiIconButton-edgeEnd"
             icon="AddCircle"
             tabindex="0"
             type="button"
@@ -63,67 +654,6 @@ Object {
             />
           </button>
         </div>
-      </header>
-    </div>
-  </body>,
-  "container": <div>
-    <header
-      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary WithStyles(ForwardRef(AppBar))-root-1 WithStyles(ForwardRef(AppBar))-root-2 MuiPaper-elevation0"
-    >
-      <div
-        class="MuiToolbar-root MuiToolbar-regular WithStyles(ForwardRef(Toolbar))-root-3 WithStyles(ForwardRef(Toolbar))-root-4"
-      >
-        <p
-          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-7 HeaderTitle-root-5 HeaderTitle-root-6 MuiTypography-body1"
-        >
-          Menu
-        </p>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-8 WithStyles(ForwardRef(IconButton))-root-9"
-          icon="Search"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              variant="Search"
-              viewBox="0 0 24 24"
-            >
-              <span />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-        <button
-          class="MuiButtonBase-root MuiIconButton-root WithStyles(ForwardRef(IconButton))-root-8 WithStyles(ForwardRef(IconButton))-root-10 MuiIconButton-edgeEnd"
-          icon="AddCircle"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              variant="AddCircle"
-              viewBox="0 0 24 24"
-            >
-              <span />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
       </div>
     </header>
   </div>,
