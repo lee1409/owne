@@ -10,13 +10,13 @@
     "strapi": "strapi",
     "gcp-build": "strapi build",
     "predeploy": "node ./scripts/build-app-yaml > app.yaml",
-    "deploy": "yarn predeploy && gcloud app deploy app.yaml --quiet"
+    "deploy": "yarn predeploy && gcloud app deploy app.yaml --quiet",
+    "test": "jest --forceExit --detectOpenHandles"
   },
   "dependencies": {
     "dotenv": "^10.0.0",
     "knex": "0.21.18",
     "pg": "^8.6.0",
-    "sqlite3": "5.0.0",
     "strapi": "3.6.6",
     "strapi-admin": "3.6.6",
     "strapi-connector-bookshelf": "3.6.6",
@@ -39,5 +39,18 @@
     "node": ">=12.0",
     "npm": "^6.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^27.0.6",
+    "sqlite3": "^5.0.0",
+    "supertest": "^6.1.6"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      ".tmp",
+      ".cache"
+    ],
+    "testEnvironment": "node"
+  }
 }
