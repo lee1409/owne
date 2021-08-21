@@ -2,6 +2,8 @@ import { styled } from "@material-ui/core/styles"
 import { FC, CSSProperties } from "react"
 import seedrandom from "seedrandom"
 
+import { TagLabel } from "../Typography"
+
 const rng = seedrandom("1")
 
 function getRandomColor() {
@@ -32,7 +34,9 @@ const Tag: FC<TagProps> = props => {
   }
   return (
     <TagContainer style={containerStyle}>
-      {label} +{count}
+      <TagLabel>
+        {label} +{count}
+      </TagLabel>
     </TagContainer>
   )
 }

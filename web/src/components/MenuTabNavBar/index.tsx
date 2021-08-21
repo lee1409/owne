@@ -13,6 +13,14 @@ const StyledTabs = styled(Tabs)(({ theme }) => ({
   },
 }))
 
+const StyledTab = styled(Tab)(({ theme }) => ({
+  fontWeight: theme.typography.fontWeightRegular,
+  color: theme.palette.secondary[500],
+  "&$selected": {
+    color: theme.palette.primary.main,
+  },
+}))
+
 const MenuTabNavBar = () => {
   const [activeTab, setActiveTab] = useState(0)
 
@@ -28,10 +36,10 @@ const MenuTabNavBar = () => {
       value={activeTab}
       onChange={handleChangeIndex}
     >
-      <Tab label="Something" />
-      <Tab label="Something" />
-      <Tab label="Something" />
-      <Tab label="Something" />
+      <StyledTab label="Something" />
+      <StyledTab label="Something" />
+      <StyledTab label="Something" />
+      <StyledTab label="Something" />
     </StyledTabs>
   )
 }

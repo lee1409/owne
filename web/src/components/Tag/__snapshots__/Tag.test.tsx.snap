@@ -9,9 +9,13 @@ Object {
         class="span-root-1"
         style="background: rgba(68, 111, 223, 0.4);"
       >
-        testing
-         +
-        1
+        <p
+          class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-2 MuiTypography-body1"
+        >
+          testing
+           +
+          1
+        </p>
       </span>
     </div>
   </body>,
@@ -20,9 +24,13 @@ Object {
       class="span-root-1"
       style="background: rgba(68, 111, 223, 0.4);"
     >
-      testing
-       +
-      1
+      <p
+        class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-2 MuiTypography-body1"
+      >
+        testing
+         +
+        1
+      </p>
     </span>
   </div>,
   "debug": [Function],

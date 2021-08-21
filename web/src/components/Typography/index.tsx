@@ -24,26 +24,27 @@ export const HeaderNavLabel = ({ ...props }) => (
 )
 
 export const FoodName = styled(Typography)({
-  fontSize: "1.125rem",
+  fontSize: "0.75rem",
 })
 
 export const SectionTitle = styled(Typography)({
-  fontSize: "1.25rem",
+  fontSize: "1rem",
   // To align icons in the text
   display: "flex",
   alignItems: "center",
 })
 
 export const LocationName = styled(Typography)(({ theme }) => ({
-  fontSize: "1.375rem",
-  fontWeight: 600,
+  fontSize: "1rem",
+  fontWeight: 500,
   [theme.breakpoints.up("lg")]: {
     fontSize: "2rem",
   },
 }))
 
 export const FoodDescription = styled(Typography)({
-  fontSize: "1rem",
+  fontSize: "0.75rem",
+  fontWeight: 300,
 })
 
 export const SidebarActionLabel = styled(Typography)({
@@ -53,3 +54,20 @@ export const SidebarActionLabel = styled(Typography)({
 export const FoodTitle = styled(Typography)({
   fontSize: "1.5rem",
 })
+
+export const TagLabel = styled(Typography)({
+  fontSize: "0.688rem",
+})
+
+export const RestaurantDetailName = styled(Typography)(({ theme }) => ({
+  fontSize: "0.75rem",
+}))
+
+export const RestaurantDetailAddress = styled(Typography)(({ theme }) => ({
+  fontSize: "0.75rem",
+}))
+
+export const ResturantDetailOperatingHour = styled(Typography)(({ theme }) => ({
+  fontSize: "0.75rem",
+  fontWeight: theme.typography.fontWeightLight,
+}))

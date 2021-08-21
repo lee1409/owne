@@ -1,4 +1,4 @@
-import { Container, Box, Typography } from "@material-ui/core"
+import { Container } from "@material-ui/core"
 
 import {
   FoodTitle,
@@ -10,8 +10,7 @@ import ImageCard from "../../components/ImageCard"
 import HorizontalDrawer from "../../components/HorizontalDrawer"
 import Tag from "../../components/Tag"
 import Icon from "../../components/Icon"
-import { IconButton } from "../../components/Button"
-
+import RestaurantDetail from "../../components/RestaurantDetail"
 import Story from "../../containers/Story"
 
 import ChickenRiceImg from "../../assets/chicken_rice.jpg"
@@ -57,7 +56,7 @@ const FoodScreen = () => {
             </SectionTitle>
           </GridContainer>
           <GridContainer item>
-            {/* TODO: load from API */}
+            {/* TODO: load from API. Add "more tags" */}
             <Tag label="Test" count={1} />
             <Tag label="TestTest" count={1} />
             <Tag label="TestTest" count={1} />
@@ -68,20 +67,11 @@ const FoodScreen = () => {
             <SectionTitle>Restaurent Details</SectionTitle>
           </GridContainer>
           <GridContainer item>
-            <GridContainer item xs={10}>
-              <Typography component="div">
-                <Box fontWeight="fontWeightRegular">Ah Beng Chicken Rice</Box>
-                <Box fontWeight="fontWeightRegular">
-                  123, Jalan Abc 456, Indah 5, 45500, Kuala Lumpur
-                </Box>
-                <Box fontWeight="fontWeightLight">
-                  Operating hour: 12.00 a.m. - 6 p.m.
-                </Box>
-              </Typography>
-            </GridContainer>
-            <GridContainer item xs={2} justify="center" alignItems="center">
-              <IconButton icon="Direction" />
-            </GridContainer>
+            <RestaurantDetail
+              name="Ah Beng Chicken Rice"
+              address="123, Jalan Abc 456, Indah 5, 45500, Kuala Lumpur"
+              operatingHour="Operating hour: 12.00 a.m. - 6 p.m."
+            />
           </GridContainer>
         </GridContainer>
       </Container>
