@@ -6,11 +6,11 @@ const StyledTabs = styled(Tabs)(({ theme }) => ({
   borderWidth: "0 0 1px 0",
   borderStyle: "solid",
   borderColor: theme.palette.secondary["500"],
-  width: "100%",
   marginBottom: "20px",
   "& .MuiTabs-indicator": {
     display: "none",
   },
+  overflow: "hidden",
 }))
 
 const StyledTab = styled(Tab)(({ theme }) => ({
