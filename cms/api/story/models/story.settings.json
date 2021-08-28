@@ -15,22 +15,26 @@
     "photos": {
       "collection": "file",
       "via": "related",
-      "allowedTypes": ["images", "files", "videos"],
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
     },
     "user": {
+      "via": "stories",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "stories"
+      "model": "user"
     },
     "description": {
       "type": "richtext"
     },
     "hashtags": {
-      "collection": "hashtag",
       "via": "stories",
+      "collection": "hashtag",
       "dominant": true
     }
   }

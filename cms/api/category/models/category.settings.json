@@ -21,9 +21,8 @@
       "dominant": true
     },
     "foods": {
-      "collection": "food",
       "via": "categories",
-      "dominant": true
+      "collection": "food"
     }
   }
 }

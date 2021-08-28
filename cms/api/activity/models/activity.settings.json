@@ -13,9 +13,9 @@
   "pluginOptions": {},
   "attributes": {
     "user": {
+      "via": "activities",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "activities"
+      "model": "user"
     },
     "type": {
       "type": "string"

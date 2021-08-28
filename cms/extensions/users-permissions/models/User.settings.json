@@ -70,6 +70,22 @@
     "activities": {
       "via": "user",
       "collection": "activity"
+    },
+    "hashtags": {
+      "via": "users",
+      "collection": "hashtag"
+    },
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
