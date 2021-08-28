@@ -1,12 +1,13 @@
 import { gql, useQuery } from "@apollo/client"
 
-const menu = gql`
+const getMenu = gql`
   query Menu {
     restaurants {
       name
       address
       categories {
         foods {
+          images
           name
           description
           hashtags {
@@ -19,7 +20,7 @@ const menu = gql`
 `
 
 const Menu = {
-    useGetMenu: () => useQuery(menu),
+    useGetMenu: () => useQuery(getMenu),
 }
 
 export default Menu;
