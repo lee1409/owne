@@ -22,6 +22,12 @@
     "stories": {
       "via": "hashtags",
       "collection": "story"
+    },
+    "users": {
+      "via": "hashtags",
+      "plugin": "users-permissions",
+      "collection": "user",
+      "dominant": true
     }
   }
 }

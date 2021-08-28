@@ -34,19 +34,36 @@
     "photos": {
       "collection": "file",
       "via": "related",
-      "allowedTypes": ["images", "files", "videos"],
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
     },
     "user": {
+      "via": "foods",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "foods"
+      "model": "user"
     },
     "categories": {
+      "collection": "category",
       "via": "foods",
-      "collection": "category"
+      "dominant": true
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
