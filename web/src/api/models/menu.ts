@@ -19,8 +19,4 @@ const getMenu = gql`
   }
 `
 
-const Menu = {
-    useGetMenu: () => useQuery(getMenu),
-}
-
-export default Menu;
+export const useGetMenu = () => useQuery(getMenu);
