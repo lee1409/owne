@@ -6,16 +6,16 @@ import { useMediaQueryUp } from "../../utils/hook"
 const StyledSidebarContainer = styled(Container)({
   display: "flex",
   flexDirection: "column",
-  justifyContent: "center",
   alignItems: "flex-end",
-  minHeight: "90vh",
   position: "sticky",
   top: "100px",
-  alignContent: "stretch",
+  paddingTop: "100px",
+  width: "200px",
 })
 
 const StyledSidebarAction = styled(SidebarAction)({
   margin: "25px 0",
+  direction: "rtl",
 })
 
 const Sidebar = () => {
@@ -29,7 +29,7 @@ const Sidebar = () => {
     <StyledSidebarContainer fixed>
       <StyledSidebarAction label="test" to="/#" />
       <StyledSidebarAction label="Main Dishes" to="/#" />
-      <StyledSidebarAction label="testtesttest" to="/#" />
+      <StyledSidebarAction label="A suuuuuuuuuuuuuuupeeerrr long one" to="/#" />
       <StyledSidebarAction label="Dessert" to="/#" />
       <StyledSidebarAction label="test" to="/#" />
     </StyledSidebarContainer>

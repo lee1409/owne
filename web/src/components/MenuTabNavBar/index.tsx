@@ -6,10 +6,18 @@ const StyledTabs = styled(Tabs)(({ theme }) => ({
   borderWidth: "0 0 1px 0",
   borderStyle: "solid",
   borderColor: theme.palette.secondary["500"],
-  width: "100%",
   marginBottom: "20px",
   "& .MuiTabs-indicator": {
     display: "none",
+  },
+  overflow: "hidden",
+}))
+
+const StyledTab = styled(Tab)(({ theme }) => ({
+  fontWeight: theme.typography.fontWeightRegular,
+  color: theme.palette.secondary[500],
+  "&$selected": {
+    color: theme.palette.primary.main,
   },
 }))
 
@@ -28,10 +36,10 @@ const MenuTabNavBar = () => {
       value={activeTab}
       onChange={handleChangeIndex}
     >
-      <Tab label="Something" />
-      <Tab label="Something" />
-      <Tab label="Something" />
-      <Tab label="Something" />
+      <StyledTab label="Something" />
+      <StyledTab label="Something" />
+      <StyledTab label="Something" />
+      <StyledTab label="Something" />
     </StyledTabs>
   )
 }
