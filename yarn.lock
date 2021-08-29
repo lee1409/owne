@@ -4240,6 +4240,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@material-ui/lab@npm:^4.0.0-alpha.60":
+  version: 4.0.0-alpha.60
+  resolution: "@material-ui/lab@npm:4.0.0-alpha.60"
+  dependencies:
+    "@babel/runtime": ^7.4.4
+    "@material-ui/utils": ^4.11.2
+    clsx: ^1.0.4
+    prop-types: ^15.7.2
+    react-is: ^16.8.0 || ^17.0.0
+  peerDependencies:
+    "@material-ui/core": ^4.12.1
+    "@types/react": ^16.8.6 || ^17.0.0
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: df5fcea56c4a390b29728694ae86bcd6b1d9d4a1218f8c4ea65ba3a7e50a7836253843ca85a6fec65d7fbc0fb7c8b3cf26e8309dbdd6cd730c3a041fc4181389
+  languageName: node
+  linkType: hard
+
 "@material-ui/styles@npm:^4.11.4":
   version: 4.11.4
   resolution: "@material-ui/styles@npm:4.11.4"
@@ -4634,6 +4655,7 @@ __metadata:
     "@iconify/react": alpha
     "@loadable/component": ^5.15.0
     "@material-ui/core": 4.11.4
+    "@material-ui/lab": ^4.0.0-alpha.60
     "@testing-library/jest-dom": ^5.11.4
     "@testing-library/react": ^11.1.0
     "@testing-library/user-event": ^12.1.10
@@ -4648,6 +4670,7 @@ __metadata:
     graphql: ^15.5.1
     react: ^17.0.2
     react-dom: ^17.0.2
+    react-hook-form: ^7.14.0
     react-router-dom: ^5.2.0
     react-scripts: 4.0.3
     seedrandom: ^3.0.5
@@ -23515,6 +23538,15 @@ fsevents@^1.2.7:
   peerDependencies:
     react: ">=16.3.0"
   checksum: 56fd795b0aecc89bac8d2733268751f0ef463bf6764090f8a801778741d4a6eaf135234cdaa50188bbda29c8e2d3ec43e9a42d1ec06b60092645c8754c7bad81
+  languageName: node
+  linkType: hard
+
+"react-hook-form@npm:^7.14.0":
+  version: 7.14.0
+  resolution: "react-hook-form@npm:7.14.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17
+  checksum: c5f5cfbc34c14c5dba49ab5914a236818adacb21e6fc0f85f18b8dcb44eb28f690e7da99727a64e1fc8c5308c87144480419d8628bc6df745a84034da5bc9eea
   languageName: node
   linkType: hard
 
