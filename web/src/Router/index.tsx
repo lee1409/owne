@@ -5,7 +5,7 @@ import Layout from "../components/Layout"
 import ROUTE_NAME from "./routeName"
 
 const MenuScreen = lazy(() => import("../screen/MenuScreen"))
-const FoodScreen = lazy(() => import("../screen/Food"))
+const FoodScreen = lazy(() => import("../screen/FoodScreen"))
 const Explore = lazy(() => import("../screen/Explore"))
 const Page404 = lazy(() => import("../screen/Page404"))
 

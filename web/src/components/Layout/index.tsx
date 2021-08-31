@@ -1,6 +1,6 @@
 import { Container, Box } from "@material-ui/core"
 import { styled } from "@material-ui/core/styles"
-import Header from "../Header"
+import Header from "../../containers/Header"
 import BottomNavigationBar from "../BottomNavigationBar"
 import Sidebar from "../Sidebar"
 

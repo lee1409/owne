@@ -1,10 +1,10 @@
-import { Container, Button } from "@material-ui/core"
+import { Container, Button, Modal } from "@material-ui/core"
 import { styled } from "@material-ui/core/styles"
 import { useForm, Controller } from "react-hook-form"
+import { useContext, FC } from "react"
 
-import Portal from "../../components/Portal"
 import { GridContainer } from "../../components/Grid"
-import BasicCloseHeader from "../../components/Header/BasicCloseHeader"
+import BasicCloseHeader from "../Header/BasicCloseHeader"
 import Location from "../../components/Location"
 import {
   TextInput,
@@ -14,6 +14,7 @@ import {
   ImageInput,
   OptionType,
 } from "../../components/Input"
+import { ModalContext } from "../../contexts/ModalContext"
 
 const Body = styled(Container)(({ theme }) => ({
   position: "absolute",
@@ -34,7 +35,11 @@ type CreateFoodFormValues = {
   images: Array<File>
 }
 
-const CreateFoodForm = () => {
+type CreateFoodFormProps = {
+  open: boolean
+}
+
+const CreateFoodForm: FC<CreateFoodFormProps> = props => {
   const { control, handleSubmit } = useForm<CreateFoodFormValues>({
     defaultValues: {
       name: "",
@@ -44,11 +49,15 @@ const CreateFoodForm = () => {
       images: [],
     },
   })
+  const { hideModal } = useContext(ModalContext)
+
+  const handleClose = () => hideModal("createFoodForm")
+
   return (
-    <Portal className="test">
+    <Modal {...props} onClose={handleClose}>
       <Body>
         <form onSubmit={handleSubmit(value => console.log(value))}>
-          <BasicCloseHeader />
+          <BasicCloseHeader onClose={handleClose} />
           <GridContainer spacing={4}>
             <GridContainer item>
               <Location location="Ah Beng Chicken Rice" />
@@ -114,7 +123,7 @@ const CreateFoodForm = () => {
           </GridContainer>
         </form>
       </Body>
-    </Portal>
+    </Modal>
   )
 }
 

@@ -1,4 +1,5 @@
 import { Container } from "@material-ui/core"
+import { useContext } from "react"
 
 import {
   FoodTitle,
@@ -12,12 +13,16 @@ import Tag from "../../components/Tag"
 import Icon from "../../components/Icon"
 import RestaurantDetail from "../../components/RestaurantDetail"
 import Story from "../../containers/Story"
+import CreateFoodForm from "../../containers/CreateFoodForm"
+import { ModalContext } from "../../contexts/ModalContext"
 
 import ChickenRiceImg from "../../assets/chicken_rice.jpg"
 
 const FoodScreen = () => {
+  const { state } = useContext(ModalContext)
   return (
     <>
+      <CreateFoodForm open={state.createFoodForm} />
       <Container fixed>
         <GridContainer spacing={2} direction="column">
           <GridContainer item>
