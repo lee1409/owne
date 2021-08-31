@@ -16,7 +16,7 @@ export const FoodMobileHeader = () => {
         <IconButton
           icon="CircleEditOutline"
           edge="end"
-          onClick={() => showModal("createFoodForm")}
+          onClick={() => showModal("foodScreenMenuModal")}
         />
       </Box>
     </HeaderContainer>
