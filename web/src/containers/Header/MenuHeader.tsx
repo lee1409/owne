@@ -1,6 +1,6 @@
 import { Box } from "@material-ui/core"
-import { IconButton } from "../Button"
-import { HeaderTitle } from "../Typography"
+import { IconButton } from "../../components/Button"
+import { HeaderTitle } from "../../components/Typography"
 import HeaderContainer from "./HeaderContainer"
 
 export const MenuMobileHeader = () => {

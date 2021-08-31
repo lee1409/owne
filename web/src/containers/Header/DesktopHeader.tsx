@@ -1,7 +1,7 @@
-import { HeaderLogo } from "../Typography"
+import { HeaderLogo } from "../../components/Typography"
 import { Avatar, Box } from "@material-ui/core"
-import SearchBar from "../SearchBar"
-import HeaderNavList from "../HeaderNavList"
+import SearchBar from "../../components/SearchBar"
+import HeaderNavList from "../../components/HeaderNavList"
 import HeaderContainer from "./HeaderContainer"
 
 const DesktopHeader = () => (
