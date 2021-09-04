@@ -1,18 +1,35 @@
 import Menu from "../../components/Menu"
 import { useMediaQueryUp } from "../../utils/hook"
 import { useGetMenu } from "../../api/models/menu"
+import { useEffect } from "react"
 
-export default function MenuScreen() {
+function MenuScreen(): JSX.Element | null {
   const matchedLg = useMediaQueryUp("lg")
-  const { data, loading } = useGetMenu()
+  // todo change sample
+  const { data, loading, error } = useGetMenu(1)
 
-  if (loading) return <div>Loading</div>
+  useEffect(() => {
+    // Get the current location
+    if (navigator) {
+      navigator.geolocation.getCurrentPosition(() => {
+        // Todo
+        // Pass the location to Google Location API
+        // Then get the restaurant menu based on the name
+      })
+    }
+  })
+
+  if (loading) return null
+  else if (!data?.restaurant?.categories) return <div>Not found</div>
 
   return (
     <Menu
       matchedLg={matchedLg}
-      list={data.restaurant.categories.foods}
+      foods={data.restaurant?.categories[0].foods}
+      categories={data.restaurant.categories.map(category => category.name)}
       location={data.restaurant.name}
     />
   )
 }
+
+export default MenuScreen

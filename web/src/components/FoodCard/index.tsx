@@ -19,7 +19,7 @@ const StyledFoodName = styled(FoodName)(() => ({
 }))
 
 type FoodCardProps = {
-  src: string
+  src?: string
   name: string
   description?: string
   tags?: Array<TagProps>

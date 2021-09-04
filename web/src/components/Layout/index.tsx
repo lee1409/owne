@@ -2,7 +2,7 @@ import { Container, Box } from "@material-ui/core"
 import { styled } from "@material-ui/core/styles"
 import Header from "../../containers/Header"
 import BottomNavigationBar from "../BottomNavigationBar"
-import Sidebar from "../Sidebar"
+import { GridContainer } from "../Grid"
 
 const Body = styled(Container)(({ theme }) => ({
   marginBottom: "60px",
@@ -17,12 +17,11 @@ const Layout = ({ children }: { children: JSX.Element }) => {
   return (
     <>
       <Header />
-      <Body maxWidth="lg" disableGutters>
-        <Box flexShrink={0}>
-          <Sidebar />
-        </Box>
-        <Content flexGrow={1}>{children}</Content>
-      </Body>
+      <Content>
+        <GridContainer style={{ height: "100%" }}>
+          {children}
+        </GridContainer>
+      </Content>
       <BottomNavigationBar />
     </>
   )

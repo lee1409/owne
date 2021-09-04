@@ -6,14 +6,16 @@ import { GridContainer } from "../Grid"
 import { SectionTitle } from "../Typography"
 import ChickenSoup from "../../assets/chicken_soup.jpg"
 import Location from "../Location"
-import MenuTabNavBar from "../MenuTabNavBar"
+import MenuTabNavBar from "./TabNavBar"
 import FoodCardList, { Food } from "../FoodCard/List"
 import { FC } from "react"
+import Sidebar from "../Sidebar/index"
 
 interface IMenuProps {
   matchedLg: boolean
-  list: Food[]
   location: string
+  foods?: Food[]
+  categories: string[]
 }
 
 const LocationContainer = styled(Container)(({ theme }) => ({
@@ -23,39 +25,54 @@ const LocationContainer = styled(Container)(({ theme }) => ({
   },
 }))
 
-const Menu: FC<IMenuProps> = ({ matchedLg, list, location }) => {
+const Menu: FC<IMenuProps> = ({
+  matchedLg,
+  location,
+  foods = [],
+  categories = [],
+}) => {
+
   return (
     <>
-      <LocationContainer fixed>
-        <GridContainer spacing={2}>
-          <GridContainer item xs={12}>
-            <Location location={location} />
-          </GridContainer>
-        </GridContainer>
-      </LocationContainer>
-
-      {!matchedLg && (
-        <>
-          <Container fixed>
-            <GridContainer spacing={2}>
-              <GridContainer item xs={12}>
-                <SectionTitle>Guess you would like</SectionTitle>
-              </GridContainer>
-              <GridContainer
-                item
-                xs={6}
-                sm={3}
-                justify="center"
-                alignItems="center"
-              >
-                <FoodCard src={ChickenSoup} name="Chicken Soup" />
-              </GridContainer>
+      <GridContainer item lg={3} xs={12}>
+        <Sidebar
+          matchedLg={matchedLg}
+          categories={categories}
+        />
+      </GridContainer>
+      <GridContainer item lg={9} xs={12}>
+        <LocationContainer fixed>
+          <GridContainer spacing={2}>
+            <GridContainer item xs={12}>
+              <Location location={location} />
             </GridContainer>
-          </Container>
-          <MenuTabNavBar />
-        </>
-      )}
-      <FoodCardList list={list} />
+          </GridContainer>
+        </LocationContainer>
+
+        {!matchedLg && (
+          <>
+            <Container fixed>
+              <GridContainer spacing={2}>
+                <GridContainer item xs={12}>
+                  <SectionTitle>Guess you would like</SectionTitle>
+                </GridContainer>
+                <GridContainer
+                  item
+                  xs={6}
+                  sm={3}
+                  justify="center"
+                  alignItems="center"
+                >
+                  <FoodCard src={ChickenSoup} name="Chicken Soup" />
+                </GridContainer>
+              </GridContainer>
+            </Container>
+            <MenuTabNavBar />
+          </>
+        )}
+
+        <FoodCardList list={foods} />
+      </GridContainer>
     </>
   )
 }
