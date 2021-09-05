@@ -1,6 +1,4 @@
-# This workflow will do a clean install of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-name: CMS Staging Deploy
+name: CMS Staging
 
 on:
   push:
@@ -8,6 +6,13 @@ on:
       - main
     paths:
       - "cms/**"
+  pull_request:
+    branches:
+      - main
+
+defaults:
+  run:
+    working-directory: cms
 
 jobs:
   build:
@@ -16,29 +21,26 @@ jobs:
       - name: Checking out codes
         uses: actions/checkout@v2
 
-      - name: Cache node_modules
-        id: cache-node-modules
-        uses: actions/cache@v2
-        with:
-          path: |
-            **/node_modules
-          key: ${{ runner.os }}-${{ hashFiles('yarn.lock') }}
-    
-      - name: Installing yarn
+      - name: Installing dependencies
         uses: actions/setup-node@v2
-      - run: sudo npm install -g yarn
+        with:
+          node-version: "12.x"
+          cache: 'npm'
+      - run: npm install
 
-      - name: yarn install
-        if: steps.cache-node-modules.outputs.cache-hit != 'true'
-        run: yarn install --skip-builds
+      - name: Testing
+        run: npm test
 
       - name: Deploy to app engine
+        if: ${{ github.event_name != 'pull_request' }}
         uses: google-github-actions/setup-gcloud@master
         with:
           project_id: ${{ secrets.PROJECT }}
           service_account_key: ${{ secrets.GCP_SA_KEY }}
           export_default_credentials: false
-      - run: yarn cms:deploy
+
+      - run: npm run deploy
+        if: ${{ github.event_name != 'pull_request' }}
         env:
           NODE_ENV: production
           DATABASE_HOSTNAME: ${{ secrets.DATABASE_HOSTNAME }}
