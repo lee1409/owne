@@ -6,7 +6,7 @@ import { useEffect } from "react"
 function MenuScreen(): JSX.Element | null {
   const matchedLg = useMediaQueryUp("lg")
   // todo change sample
-  const { data, loading, error } = useGetMenu(1)
+  const { data, loading } = useGetMenu(1)
 
   useEffect(() => {
     // Get the current location
