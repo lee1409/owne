@@ -11,26 +11,21 @@ on:
 
 jobs:
   build:
+    defaults:
+      run:
+        working-directory: cms
     runs-on: ubuntu-latest
     steps:
       - name: Checking out codes
         uses: actions/checkout@v2
-
-      - name: Cache node_modules
-        id: cache-node-modules
-        uses: actions/cache@v2
+      
+      - uses: actions/setup-node@v2
         with:
-          path: |
-            **/node_modules
-          key: ${{ runner.os }}-${{ hashFiles('yarn.lock') }}
-    
-      - name: Installing yarn
-        uses: actions/setup-node@v2
-      - run: sudo npm install -g yarn
+          node-version: '14'
 
-      - name: yarn install
-        if: steps.cache-node-modules.outputs.cache-hit != 'true'
-        run: yarn install --skip-builds
+      - run: npm install
+      - run: npm test
+
 
       - name: Deploy to app engine
         uses: google-github-actions/setup-gcloud@master
@@ -38,7 +33,7 @@ jobs:
           project_id: ${{ secrets.PROJECT }}
           service_account_key: ${{ secrets.GCP_SA_KEY }}
           export_default_credentials: false
-      - run: yarn cms:deploy
+      - run: npm run deploy
         env:
           NODE_ENV: production
           DATABASE_HOSTNAME: ${{ secrets.DATABASE_HOSTNAME }}
