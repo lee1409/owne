@@ -1,7 +1,7 @@
 import { Container } from "@material-ui/core"
 import { styled } from "@material-ui/core/styles"
 import SidebarAction from "./SidebarAction"
-import { useMediaQueryUp } from "../../utils/hook"
+import { FC } from "react"
 
 const StyledSidebarContainer = styled(Container)({
   display: "flex",
@@ -18,20 +18,25 @@ const StyledSidebarAction = styled(SidebarAction)({
   direction: "rtl",
 })
 
-const Sidebar = () => {
-  const matchedLg = useMediaQueryUp("lg")
+interface ISidebarProps {
+  matchedLg: boolean
+  categories: string[]
+}
 
+const Sidebar: FC<ISidebarProps> = ({ matchedLg, categories }) => {
   if (!matchedLg) {
     return null
   }
-
+  
   return (
     <StyledSidebarContainer fixed>
-      <StyledSidebarAction label="test" to="/#" />
-      <StyledSidebarAction label="Main Dishes" to="/#" />
-      <StyledSidebarAction label="A suuuuuuuuuuuuuuupeeerrr long one" to="/#" />
-      <StyledSidebarAction label="Dessert" to="/#" />
-      <StyledSidebarAction label="test" to="/#" />
+      {categories.map(category => (
+        <StyledSidebarAction
+          label={category}
+          to={"#" + category}
+          key={category}
+        />
+      ))}
     </StyledSidebarContainer>
   )
 }

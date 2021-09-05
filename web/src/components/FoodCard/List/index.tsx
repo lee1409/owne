@@ -2,13 +2,13 @@ import { FC } from "react"
 import { Container } from "@material-ui/core"
 import { FoodCard } from ".."
 import { GridContainer } from "../../Grid"
-import { TagProps } from "../../Tag"
 
 export type Food = {
-  featured_image: string
+  featured_image?: {
+    url: string
+  }
   name: string
   description: string
-  tags: TagProps[]
 }
 
 type Prop = {
@@ -25,10 +25,9 @@ const FoodCardList: FC<Prop> = (props) => {
         {list.map(item => (
           <GridContainer item xs={12} md={6} lg={4}>
             <FoodCard
-              src={item.featured_image}
+              src={item.featured_image?.url}
               name={item.name}
               description={item.description}
-              tags={item.tags}
             />
           </GridContainer>
         ))}

@@ -1,17 +1,27 @@
 import { gql, useQuery } from "@apollo/client"
 
 const getMenu = gql`
-  query Menu {
-    restaurants {
+  query GetMenu($id: ID!) {
+    restaurant(id: $id) {
+      id
       name
-      address
       categories {
+        name
         foods {
-          images
+          id
           name
           description
           hashtags {
             name
+          }
+          featured_image {
+            id
+            url
+          }
+          images {
+            url
+            width
+            height
           }
         }
       }
@@ -19,4 +29,6 @@ const getMenu = gql`
   }
 `
 
-export const useGetMenu = () => useQuery(getMenu);
+export const useGetMenu = (id: number) => useQuery<IGetMenu, MenuVariable>(getMenu, {
+  variables: { id }
+})
