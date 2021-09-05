@@ -1,4 +1,4 @@
-import { Container, Box } from "@material-ui/core"
+import { Container } from "@material-ui/core"
 import { styled } from "@material-ui/core/styles"
 import Header from "../../containers/Header"
 import BottomNavigationBar from "../BottomNavigationBar"
