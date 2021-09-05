@@ -25,11 +25,9 @@ jobs:
         with:
           node-version: "12.x"
           cache: 'npm'
-      - run: npm install
-
+        run: npm install
       - name: Testing strapi
-        uses: actions/setup-node@v2
-      - run: npm test
+        run: npm test
 
       - name: Deploy to app engine
         uses: google-github-actions/setup-gcloud@master
