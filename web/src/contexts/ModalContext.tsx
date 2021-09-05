@@ -3,6 +3,7 @@ import { createContext, useReducer, Reducer } from "react"
 
 const initialState = {
   createFoodForm: false,
+  foodScreenMenuModal: false,
 }
 
 type ActionType = {

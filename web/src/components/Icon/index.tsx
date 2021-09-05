@@ -3,19 +3,22 @@ import { SvgIcon, SvgIconProps } from "@material-ui/core"
 import { FC } from "react"
 
 const icons = {
-  Location: <Iconify icon="ic:baseline-location-on" />,
-  Menu: <Iconify icon="mdi:newspaper-variant" />,
-  Explore: <Iconify icon="mdi:compass" />,
-  Stories: <Iconify icon="mdi:progress-pencil" />,
-  More: <Iconify icon="mdi:dots-horizontal-circle" />,
-  Search: <Iconify icon="ic:baseline-search" />,
-  AddCircle: <Iconify icon="ic:baseline-add-circle-outline" />,
-  ArrowLeft: <Iconify icon="mdi:arrow-left" />,
-  CircleEditOutline: <Iconify icon="mdi:circle-edit-outline" />,
-  HashTag: <Iconify icon="mdi:pound-box" />,
-  Direction: <Iconify icon="mdi:directions" />,
-  Close: <Iconify icon="ic:round-close" />,
-  Plus: <Iconify icon="mdi:plus" />,
+  Location: "ic:baseline-location-on",
+  Menu: "mdi:newspaper-variant",
+  Explore: "mdi:compass",
+  Stories: "mdi:progress-pencil",
+  More: "mdi:dots-horizontal-circle",
+  Search: "ic:baseline-search",
+  AddCircle: "ic:baseline-add-circle-outline",
+  ArrowLeft: "mdi:arrow-left",
+  CircleEditOutline: "mdi:circle-edit-outline",
+  HashTag: "mdi:pound-box",
+  Direction: "mdi:directions",
+  Close: "ic:round-close",
+  Plus: "mdi:plus",
+  Food: "mdi:food",
+  NotePlus: "mdi:note-plus",
+  Alert: "mdi:alert",
 }
 
 export type IconVariant = keyof typeof icons
@@ -26,9 +29,12 @@ type IconProps = {
 
 const Icon: FC<IconProps> = props => {
   const { variant } = props
-  const IconifyIcon = icons[variant]
 
-  return <SvgIcon {...props}>{IconifyIcon}</SvgIcon>
+  return (
+    <SvgIcon {...props}>
+      <Iconify icon={icons[variant]} />
+    </SvgIcon>
+  )
 }
 
 export default Icon
