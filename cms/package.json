@@ -43,7 +43,8 @@
   "devDependencies": {
     "jest": "^27.0.6",
     "sqlite3": "^5.0.0",
-    "supertest": "^6.1.6"
+    "supertest": "^6.1.6",
+    "yaml": "^1.10.2"
   },
   "jest": {
     "testPathIgnorePatterns": [
