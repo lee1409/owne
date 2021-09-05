@@ -10,11 +10,12 @@ on:
     branches:
       - main
 
+defaults:
+  run:
+    working-directory: cms
+
 jobs:
   build:
-    defaults:
-      run:
-        working-directory: cms
     runs-on: ubuntu-latest
     steps:
       - name: Checking out codes
@@ -25,18 +26,21 @@ jobs:
         with:
           node-version: "12.x"
           cache: 'npm'
-        run: npm install
-      - name: Testing strapi
+      - run: npm install
+
+      - name: Testing
         run: npm test
 
       - name: Deploy to app engine
+        if: ${{ github.event_name != 'pull_request' }}
         uses: google-github-actions/setup-gcloud@master
         with:
           project_id: ${{ secrets.PROJECT }}
           service_account_key: ${{ secrets.GCP_SA_KEY }}
           export_default_credentials: false
+
+      - run: npm run deploy
         if: ${{ github.event_name != 'pull_request' }}
-        run: npm run deploy
         env:
           NODE_ENV: production
           DATABASE_HOSTNAME: ${{ secrets.DATABASE_HOSTNAME }}
