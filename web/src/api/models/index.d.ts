@@ -1,10 +1,10 @@
 interface IGetMenu {
-  restaurant?: {
+  restaurants: {
     id: string
     name: string
-    categories?: {
+    categories: {
       name: string
-      foods?: {
+      foods: {
         id: string
         name: string
         description: string
@@ -22,9 +22,9 @@ interface IGetMenu {
         }[]
       }[]
     }[]
-  }
+  }[]
 }
 
 interface MenuVariable {
-  id: number
+  slug: string
 }
