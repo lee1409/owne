@@ -29,6 +29,6 @@ const getMenu = gql`
   }
 `
 
-export const useGetMenu = (name: string) => useQuery<IGetMenu, MenuVariable>(getMenu, {
-  variables: { name }
+export const useGetMenu = (slug: string) => useQuery<IGetMenu, MenuVariable>(getMenu, {
+  variables: { slug }
 })
