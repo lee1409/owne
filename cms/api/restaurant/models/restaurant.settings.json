@@ -39,6 +39,10 @@
     "categories": {
       "via": "restaurants",
       "collection": "category"
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
     }
   }
 }
