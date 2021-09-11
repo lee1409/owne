@@ -27,6 +27,10 @@
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,json,css,scss,md}'",
     "prepare": "husky install",
     "web:start": "cd web && yarn start",
-    "web:build": "cd web && yarn build"
+    "web:build": "cd web && yarn build",
+    "develop": "npm-run-all -l -p cms:develop web:start",
+    "cms:predeploy": "cd cms && yarn predeploy",
+    "cms:deploy": "cd cms && yarn deploy",
+    "cms:develop": "cd cms && yarn develop"
   }
 }
