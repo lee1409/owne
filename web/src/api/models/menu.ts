@@ -1,8 +1,8 @@
 import { gql, useQuery } from "@apollo/client"
 
 const getMenu = gql`
-  query GetMenu($id: ID!) {
-    restaurant(id: $id) {
+  query GetMenu($slug: String!) {
+    restaurants(where: {slug: $slug}) {
       id
       name
       categories {
@@ -29,6 +29,6 @@ const getMenu = gql`
   }
 `
 
-export const useGetMenu = (id: number) => useQuery<IGetMenu, MenuVariable>(getMenu, {
-  variables: { id }
+export const useGetMenu = (name: string) => useQuery<IGetMenu, MenuVariable>(getMenu, {
+  variables: { name }
 })
