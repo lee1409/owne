@@ -1,46 +1,25 @@
-import Menu from "../../components/Menu"
+import MenuDetail from "../../components/MenuDetail"
 import { useMediaQueryUp } from "../../utils/hook"
 import { useGetMenu } from "../../api/models/menu"
-import { useEffect, useState } from "react"
-import { useParams } from 'react-router-dom';
+import { Redirect, useParams } from 'react-router-dom';
 
 
-
-function MenuDetailScreen(): JSX.Element | null {
+function MenuDetailScreen(): JSX.Element {
   const matchedLg = useMediaQueryUp("lg")
-  const {slug} = useParams();
-  // todo change sample
+  const { slug } = useParams<{slug: string}>();
   const { data, loading } = useGetMenu(slug);
 
-  useEffect(() => {
-    // Get the current location
-    // Just get the params
-
-
-
-    if (navigator) {
-      navigator.geolocation.getCurrentPosition(() => {
-        // Todo
-        // Pass the location to Google Location API
-        // Then get the restaurant menu based on the name
-      })
-    }
-
-
-
-  }, []);
-
-
-
-  if (loading) return null
-  else if (!data?.restaurant?.categories) return <div style={{display: "grid", placeItems: 'center'}}>Not found</div>
+  console.log(data)
+  if (loading) return <div></div>
+  else if (!data?.restaurants.length) return <Redirect to={"/menu"}></Redirect>
+  else if (data.restaurants[0].categories.length === 0) return <div>There's something wrong occurred</div>
 
   return (
-    <Menu
+    <MenuDetail
       matchedLg={matchedLg}
-      foods={data.restaurant?.categories[0].foods}
-      categories={data.restaurant.categories.map(category => category.name)}
-      location={data.restaurant.name}
+      foods={data.restaurants[0].categories[0].foods}
+      categories={data.restaurants[0].categories.map(category => category.name)}
+      location={data.restaurants[0].name}
     />
   )
 }
