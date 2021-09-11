@@ -1,7 +1,7 @@
 import React from 'react';
 
 function MenuScreen() {
-  const [state, setState] = React.useState<string | null>("loading");
+  const [state] = React.useState<string | null>("loading");
   // todo: request location to get the current location
 
   if (state === "loading") {
