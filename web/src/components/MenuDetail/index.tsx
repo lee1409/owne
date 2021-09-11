@@ -25,7 +25,7 @@ const LocationContainer = styled(Container)(({ theme }) => ({
   },
 }))
 
-const Menu: FC<IMenuProps> = ({
+const MenuDetail: FC<IMenuProps> = ({
   matchedLg,
   location,
   foods = [],
@@ -77,4 +77,4 @@ const Menu: FC<IMenuProps> = ({
   )
 }
 
-export default Menu
+export default MenuDetail
