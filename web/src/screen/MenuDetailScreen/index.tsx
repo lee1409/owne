@@ -1,15 +1,23 @@
 import Menu from "../../components/Menu"
 import { useMediaQueryUp } from "../../utils/hook"
 import { useGetMenu } from "../../api/models/menu"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
+import { useParams } from 'react-router-dom';
 
-function MenuScreen(): JSX.Element | null {
+
+
+function MenuDetailScreen(): JSX.Element | null {
   const matchedLg = useMediaQueryUp("lg")
+  const {slug} = useParams();
   // todo change sample
-  const { data, loading } = useGetMenu(1)
+  const { data, loading } = useGetMenu(slug);
 
   useEffect(() => {
     // Get the current location
+    // Just get the params
+
+
+
     if (navigator) {
       navigator.geolocation.getCurrentPosition(() => {
         // Todo
@@ -17,10 +25,15 @@ function MenuScreen(): JSX.Element | null {
         // Then get the restaurant menu based on the name
       })
     }
-  })
+
+
+
+  }, []);
+
+
 
   if (loading) return null
-  else if (!data?.restaurant?.categories) return <div>Not found</div>
+  else if (!data?.restaurant?.categories) return <div style={{display: "grid", placeItems: 'center'}}>Not found</div>
 
   return (
     <Menu
@@ -32,4 +45,4 @@ function MenuScreen(): JSX.Element | null {
   )
 }
 
-export default MenuScreen
+export default MenuDetailScreen
