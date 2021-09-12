@@ -58,16 +58,3 @@ export const FoodTitle = styled(Typography)({
 export const TagLabel = styled(Typography)({
   fontSize: "0.688rem",
 })
-
-export const RestaurantDetailName = styled(Typography)(({ theme }) => ({
-  fontSize: "0.75rem",
-}))
-
-export const RestaurantDetailAddress = styled(Typography)(({ theme }) => ({
-  fontSize: "0.75rem",
-}))
-
-export const ResturantDetailOperatingHour = styled(Typography)(({ theme }) => ({
-  fontSize: "0.75rem",
-  fontWeight: theme.typography.fontWeightLight,
-}))

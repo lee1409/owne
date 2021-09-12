@@ -1,13 +1,8 @@
 import { Box } from "@material-ui/core"
 import { FC } from "react"
 
-import { IconButton } from "../../components/Button"
-
-import {
-  RestaurantDetailAddress,
-  RestaurantDetailName,
-  ResturantDetailOperatingHour,
-} from "../../components/Typography"
+import { IconButton } from "../../Button"
+import { createName, createAddress, createOperatingHours } from "./utils"
 
 type RestaurantDetailProps = {
   name: string
@@ -18,14 +13,17 @@ type RestaurantDetailProps = {
 // TODO: location map redirection
 const RestaurantDetail: FC<RestaurantDetailProps> = props => {
   const { name, address, operatingHour } = props
+
+  const Name = createName(name)
+  const Address = createAddress(address)
+  const OperatingHour = createOperatingHours(operatingHour)
+
   return (
     <Box display="flex" flexGrow={1}>
       <Box flexGrow={1}>
-        <RestaurantDetailName>{name}</RestaurantDetailName>
-        <RestaurantDetailAddress>{address}</RestaurantDetailAddress>
-        <ResturantDetailOperatingHour>
-          {operatingHour}
-        </ResturantDetailOperatingHour>
+        <Name />
+        <Address />
+        <OperatingHour />
       </Box>
       <Box>
         <IconButton icon="Direction" />

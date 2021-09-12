@@ -7,3 +7,7 @@ export const useMediaQueryUp = (breakpoints: Breakpoint | number) => {
   const matches = useMuiMediaQuery(bpUp)
   return matches
 }
+
+export const useIsMobile = () => {
+  return !useMediaQueryUp("lg")
+}

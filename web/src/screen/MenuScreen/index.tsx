@@ -1,5 +1,5 @@
 import Menu from "../../components/Menu"
-import { useMediaQueryUp } from "../../utils/hook"
+import { useMediaQueryUp } from "../../hooks/layout"
 import { useGetMenu } from "../../api/models/menu"
 import { useEffect } from "react"
 

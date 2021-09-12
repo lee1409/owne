@@ -3,7 +3,7 @@ import DesktopHeader from "./DesktopHeader"
 import { FoodMobileHeader } from "./FoodHeader"
 import { MenuMobileHeader } from "./MenuHeader"
 import ROUTE_NAME from "../../Router/routeName"
-import { useMediaQueryUp } from "../../utils/hook"
+import { useMediaQueryUp } from "../../hooks/layout"
 import { getSegment } from "../../utils/urlHelper"
 
 const Header = () => {
