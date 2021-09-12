@@ -7,9 +7,9 @@ import Story from "../../containers/Story"
 import { FoodTitle, SectionTitle, FoodDescription } from "../Typography"
 import ImaageContainer from "./ImageContainer"
 import RestaurantDetail from "./RestaurantDetail"
-import Tag from "../Tag"
 import { ModalContext } from "../../contexts/ModalContext"
 import Icon from "../Icon"
+import Tags from "./Tags"
 
 const Food = () => {
   const { state } = useContext(ModalContext)
@@ -50,12 +50,7 @@ const Food = () => {
             </SectionTitle>
           </GridContainer>
           <GridContainer item>
-            {/* TODO: load from API. Add "more tags" */}
-            <Tag label="Test" count={1} />
-            <Tag label="TestTest" count={1} />
-            <Tag label="TestTest" count={1} />
-            <Tag label="TestTest" count={1} />
-            <Tag label="TestTest" count={1} />
+            <Tags />
           </GridContainer>
           <GridContainer item>
             <SectionTitle>Restaurent Details</SectionTitle>
