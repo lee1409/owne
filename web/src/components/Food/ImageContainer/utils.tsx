@@ -12,7 +12,7 @@ const MobileImage = styled("img")({
 })
 
 const DesktopImage = styled("img")({
-  width: "500px",
+  width: "100%",
   borderRadius: "12px",
 })
 

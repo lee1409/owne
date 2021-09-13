@@ -5,7 +5,7 @@ import { createImage } from "./utils"
 
 import ChickenRiceImg from "../../../assets/chicken_rice.jpg"
 
-const dummyData = [1, 2]
+const dummyData = [1, 2, 3, 4, 5]
 
 const FoodImages = () => {
   const isMobile = useIsMobile()

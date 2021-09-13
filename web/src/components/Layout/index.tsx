@@ -6,15 +6,14 @@ import BottomNavigationBar from "../BottomNavigationBar"
 const Body = styled(Container)(({ theme }) => ({
   marginBottom: "60px",
   display: "flex",
+  maxWidth: "100vw",
 }))
 
 const Layout = ({ children }: { children: JSX.Element }) => {
   return (
     <>
       <Header />
-      <Body maxWidth="lg" disableGutters>
-        {children}
-      </Body>
+      <Body fixed>{children}</Body>
       <BottomNavigationBar />
     </>
   )
