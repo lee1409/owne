@@ -31,14 +31,10 @@ const MenuDetail: FC<IMenuProps> = ({
   foods = [],
   categories = [],
 }) => {
-
   return (
     <>
       <GridContainer item lg={3} xs={12}>
-        <Sidebar
-          matchedLg={matchedLg}
-          categories={categories}
-        />
+        <Sidebar matchedLg={matchedLg} categories={categories} />
       </GridContainer>
       <GridContainer item lg={9} xs={12}>
         <LocationContainer fixed>

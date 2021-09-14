@@ -1,6 +1,6 @@
 import { StoryButton } from "../../components/Button"
 import ChickenRice from "../../assets/chicken_rice.jpg"
-import { useMediaQueryUp } from "../../utils/hook"
+import { useMediaQueryUp } from "../../hooks/layout"
 import HorizontalDrawer from "../../components/HorizontalDrawer"
 
 // TODO: remove dummyStories after integrating with API
