@@ -25,20 +25,16 @@ const LocationContainer = styled(Container)(({ theme }) => ({
   },
 }))
 
-const Menu: FC<IMenuProps> = ({
+const MenuDetail: FC<IMenuProps> = ({
   matchedLg,
   location,
   foods = [],
   categories = [],
 }) => {
-
   return (
     <>
       <GridContainer item lg={3} xs={12}>
-        <Sidebar
-          matchedLg={matchedLg}
-          categories={categories}
-        />
+        <Sidebar matchedLg={matchedLg} categories={categories} />
       </GridContainer>
       <GridContainer item lg={9} xs={12}>
         <LocationContainer fixed>
@@ -77,4 +73,4 @@ const Menu: FC<IMenuProps> = ({
   )
 }
 
-export default Menu
+export default MenuDetail
