@@ -1,4 +1,4 @@
-import createMuiTheme from "@material-ui/core/styles/createMuiTheme"
+import { createTheme } from "@material-ui/core/styles"
 import { ColorPartial } from "@material-ui/core/styles/createPalette"
 
 // Import font specifications separately to reduce bundle size
@@ -14,7 +14,7 @@ declare module "@material-ui/core/styles/createPalette" {
   interface PaletteColor extends ColorPartial {}
 }
 
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: {
       main: "#000000",
