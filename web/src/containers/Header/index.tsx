@@ -2,7 +2,7 @@ import { useLocation } from "react-router"
 import DesktopHeader from "./DesktopHeader"
 import { FoodMobileHeader } from "./FoodHeader"
 import { MenuMobileHeader } from "./MenuHeader"
-import ROUTE_NAME from "../../Router/routeName"
+import ROUTE_NAME from "../../router/routeName"
 import { useMediaQueryUp } from "../../hooks/layout"
 import { getSegment } from "../../utils/urlHelper"
 
