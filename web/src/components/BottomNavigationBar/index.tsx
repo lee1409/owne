@@ -4,7 +4,7 @@ import { styled } from "@material-ui/core/styles"
 import { useLocation } from "react-router-dom"
 
 import BottomNavigationAction from "./BottomNavigationAction"
-import ROUTE_NAME from "../../Router/routeName"
+import ROUTE_NAME from "../../router/routeName"
 import { useMediaQueryUp } from "../../hooks/layout"
 
 const StyledFooter = styled("footer")(() => ({

@@ -4,9 +4,9 @@ import { lazy } from "@loadable/component"
 import Layout from "../components/Layout"
 import ROUTE_NAME from "./routeName"
 
-const MenuScreen = lazy(() => import("../screen/MenuScreen"))
-const MenuDetailScreen = lazy(() => import("../screen/MenuDetailScreen"))
-const FoodScreen = lazy(() => import("../screen/FoodScreen"))
+const MenuScreen = lazy(() => import("../screen/Menu"))
+const MenuDetailScreen = lazy(() => import("../screen/MenuDetail"))
+const FoodScreen = lazy(() => import("../screen/Food"))
 const Explore = lazy(() => import("../screen/Explore"))
 const Page404 = lazy(() => import("../screen/Page404"))
 

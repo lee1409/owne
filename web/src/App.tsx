@@ -1,5 +1,5 @@
 import { ThemeProvider as MuiThemeProvider } from "@material-ui/core"
-import Router from "./Router"
+import Router from "./router"
 import theme from "./utils/theme"
 import { ApolloProvider } from "@apollo/client"
 import { ModalProvider } from "./contexts/ModalContext"

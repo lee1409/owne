@@ -8,7 +8,6 @@ function MenuDetailScreen(): JSX.Element {
   const { slug } = useParams<{ slug: string }>()
   const { data, loading } = useGetMenu(slug)
 
-  console.log(data)
   if (loading) return <div></div>
   else if (!data?.restaurants.length) return <Redirect to={"/menu"}></Redirect>
   else if (data.restaurants[0].categories.length === 0)

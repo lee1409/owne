@@ -3,7 +3,7 @@ import clsx from "clsx"
 import { useLocation, useHistory } from "react-router-dom"
 
 import HeaderNavAction from "./HeaderNavAction"
-import ROUTE_NAME from "../../Router/routeName"
+import ROUTE_NAME from "../../router/routeName"
 
 const actions = [
   {
