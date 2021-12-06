@@ -17,7 +17,7 @@ export type FoodFormValue = {
   images: Array<File>
 }
 
-const createFood: FormItem<FoodFormValue, any>[] = [
+const CreateFoodItems: FormItem<FoodFormValue, any>[] = [
   createMultilineInput("name", "Hello"),
   createSelectInput("description", "Description", [
     { label: "test", value: "test" },
@@ -26,7 +26,7 @@ const createFood: FormItem<FoodFormValue, any>[] = [
   createImageInput("images", "Images"),
 ]
 
-export default function FoodForm() {
+export default function CreateFood() {
   const { control, handleSubmit } = useForm<FoodFormValue>({
     defaultValues: {
       name: "",
@@ -39,7 +39,7 @@ export default function FoodForm() {
 
   return (
     <Form
-      items={createFood}
+      items={CreateFoodItems}
       onSubmit={handleSubmit(value => console.log(value))}
       control={control}
     />
