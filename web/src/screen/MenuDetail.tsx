@@ -1,6 +1,6 @@
-import MenuDetail from "../../components/MenuDetail"
-import { useMediaQueryUp } from "../../hooks/layout"
-import { useGetMenu } from "../../api/models/menu"
+import MenuDetail from "../components/MenuDetail"
+import { useMediaQueryUp } from "../hooks/layout"
+import { useGetMenu } from "../api/models/menu"
 import { Redirect, useParams } from "react-router-dom"
 
 function MenuDetailScreen(): JSX.Element {

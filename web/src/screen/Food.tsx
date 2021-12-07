@@ -1,4 +1,4 @@
-import Food from "../../components/Food"
+import Food from "../components/Food"
 
 const FoodScreen = () => {
   return <Food />
