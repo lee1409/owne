@@ -36,7 +36,7 @@ const BottomNavigationBar = () => {
         <BottomNavigationAction
           label="Explore"
           value="explore"
-          route={ROUTE_NAME.EXPLORE}
+          route={ROUTE_NAME.HOME}
         />
         <BottomNavigationAction
           label="Menu"

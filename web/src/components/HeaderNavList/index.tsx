@@ -7,10 +7,6 @@ import ROUTE_NAME from "../../router/routeName"
 
 const actions = [
   {
-    label: "Explore",
-    route: ROUTE_NAME.EXPLORE,
-  },
-  {
     label: "Menu",
     route: ROUTE_NAME.MENU,
   },

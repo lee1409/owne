@@ -3,7 +3,6 @@ const ROUTE_NAME = {
   MENU: "/menu",
   MENU_DETAIL: "/menu/:slug",
   FOOD: "/food",
-  EXPLORE: "/explore",
   STORIES: "/stories",
   MORE: "/more",
   PAGE_404: "*",

@@ -1,4 +1,5 @@
 import React from "react"
+import Layout from "../components/Layout"
 
 function MenuScreen() {
   const [state] = React.useState<string | null>("loading")
@@ -9,7 +10,9 @@ function MenuScreen() {
   }
 
   return (
-    <div>Try to activate GPS for auto finding or search the restaurant</div>
+    <Layout>
+      <div>Try to activate GPS for auto finding or search the restaurant</div>
+    </Layout>
   )
 }
 
