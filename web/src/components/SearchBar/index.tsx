@@ -1,68 +1,89 @@
-import { FC } from "react"
-import { InputBase, makeStyles, Theme, fade } from "@material-ui/core"
-import { styled } from "@material-ui/core/styles"
-import clsx from "clsx"
+import { ButtonBase, InputBase, InputBaseProps } from "@material-ui/core"
+import React from "react"
 import Icon from "../Icon"
+import { styled } from "@material-ui/core/styles"
 
-const SearchContainer = styled("div")(({ theme }) => ({
-  position: "relative",
+const Container = styled("div")({
   border: "1px solid black",
-  borderRadius: 22,
-  backgroundColor: fade(theme.palette.common.white, 0.15),
-  "&:hover": {
-    backgroundColor: fade(theme.palette.common.black, 0.05),
-  },
-  width: "auto",
-}))
+  borderRadius: 6,
+  position: "relative",
+})
 
-const SearchIconContainer = styled("div")(({ theme }) => ({
-  padding: theme.spacing(0, 2),
-  height: "100%",
-  position: "absolute",
-  pointerEvents: "none",
+const ItemWrapper = styled("div")({
+  width: 250,
+  padding: 6,
   display: "flex",
   alignItems: "center",
-  justifyContent: "center",
-}))
+})
 
-const useStyles = makeStyles((theme: Theme) => ({
-  inputRoot: {
-    color: theme.palette.primary.main,
-  },
-  inputInput: {
-    padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
-    transition: theme.transitions.create("width"),
-    width: "100%",
-    [theme.breakpoints.up("md")]: {
-      width: "20ch",
-    },
-  },
-}))
+const IconWrapper = styled("div")({
+  padding: 6,
+})
 
-type SearchBarProps = {
-  className?: string
-}
-
-const SearchBar: FC<SearchBarProps> = ({ className }) => {
-  const containerClassName = clsx(className)
-  const classes = useStyles()
+// The search bar should contain afew of suggestion
+// for user to click
+// TODO: The search functionality is barely working.
+function SearchBar({
+  loading = false,
+  options,
+  onEnter,
+  ...props
+}: SearchBarProps) {
   return (
-    <SearchContainer className={containerClassName}>
-      <SearchIconContainer>
-        <Icon variant="Search" />
-      </SearchIconContainer>
-      <InputBase
-        classes={{
-          root: classes.inputRoot,
-          input: classes.inputInput,
-        }}
-        inputProps={{ "aria-label": "search" }}
-        placeholder="Search"
-      />
-    </SearchContainer>
+    <form onSubmit={onEnter}>
+      <Container>
+        <ItemWrapper>
+          <IconWrapper>
+            <Icon variant={"Search"} />
+          </IconWrapper>
+          <InputBase {...props} />
+        </ItemWrapper>
+        <div
+          style={{
+            position: "absolute",
+            border: "1px solid black",
+            borderTop: "none",
+          }}
+        >
+          {loading ? (
+            <ItemWrapper>Loading</ItemWrapper>
+          ) : (
+            options.map((el, idx) => {
+              return (
+                <ItemWrapper key={typeof el === "string" ? idx : el.id}>
+                  <ButtonBase
+                    onClick={e =>
+                      props.resultClick ? props.resultClick(e, el) : null
+                    }
+                  >
+                    <div style={{ width: 36 }}></div>
+                    <div>{typeof el === "string" ? el : el.name}</div>{" "}
+                  </ButtonBase>
+                </ItemWrapper>
+              )
+            })
+          )}
+        </div>
+      </Container>
+    </form>
   )
 }
+
+export type SearchItem =
+  | {
+      id: string
+      name: string
+    }
+  | string
+
+export type SearchBarProps = {
+  options: SearchItem[]
+  resultClick?: (
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+    item: SearchItem
+  ) => void
+  loading?: boolean
+  onEnter?: (e: React.FormEvent<HTMLFormElement>) => void
+} & InputBaseProps
 
 export default SearchBar

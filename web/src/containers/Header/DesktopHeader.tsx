@@ -2,7 +2,7 @@ import { HeaderLogo } from "../../components/Typography"
 import { Avatar, Box } from "@material-ui/core"
 import HeaderNavList from "../../components/HeaderNavList"
 import HeaderContainer from "./HeaderContainer"
-import { Autocomplete } from "../../components/Autocomplete/index"
+import SearchBar from "../SearchBar"
 
 const DesktopHeader = () => (
   <HeaderContainer>
@@ -13,7 +13,7 @@ const DesktopHeader = () => (
       <HeaderNavList />
     </Box>
     <Box mr={10}>
-      <Autocomplete />
+      <SearchBar></SearchBar>
     </Box>
     <Box>
       <Avatar />
