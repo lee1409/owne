@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "dotenv": "^10.0.0",
-    "knex": "0.21.18",
+    "knex": "2.4.0",
     "pg": "^8.6.0",
     "strapi": "3.6.6",
     "strapi-admin": "3.6.6",
